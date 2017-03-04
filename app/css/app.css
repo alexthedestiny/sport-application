@@ -1,0 +1,14 @@
+body {
+
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+  margin-top: 0;
+}
+
+.map-canvas { height: 400px; width: 100%; }
+
+.active {
+  color: red;
+}
