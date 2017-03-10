@@ -1,512 +1,525 @@
+<div class="login_register_stuff">
+    <div id="login_panel" class="loginbox-popup auth-popup mfp-hide">
+        <div class="inner-container login-panel auth-popup-panel">
+            <h3 class="m_title_ext auth-popup-title" itemprop="alternativeHeadline">SIGN IN YOUR ACCOUNT TO HAVE ACCESS TO DIFFERENT FEATURES</h3>
+            <form id="login_form" name="login_form" method="post" class="zn_form_login" action="http://demo.kallyas.net/membership/wp-login.php?wpe-login=kallyasdemos">
+                <div class="zn_form_login-result"></div>
+                <div class="form-group kl-fancy-form">
+                    <input type="text" id="kl-username" name="log" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="eg: james_smith"/>
+                    <label class="kl-font-alt kl-fancy-form-label">USERNAME</label>
+                </div>
+                <div class="form-group kl-fancy-form">
+                    <input type="password" id="kl-password" name="pwd" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="type password"/>
+                    <label class="kl-font-alt kl-fancy-form-label">PASSWORD</label>
+                </div>
+                <label class="zn_remember auth-popup-remember" for="kl-rememberme">
+                    <input type="checkbox" name="rememberme" id="kl-rememberme" value="forever" class="auth-popup-remember-chb"/>
+                    Remember Me </label>
+                <input type="submit" id="login" name="submit_button" class="btn zn_sub_button btn-fullcolor btn-md" value="LOG IN"/>
+                <input type="hidden" value="login" class="" name="zn_form_action"/>
+                <input type="hidden" value="zn_do_login" class="" name="action"/>
+                <input type="hidden" value="http://demo.kallyas.net/membership" class="zn_login_redirect" name="submit"/>
+                <div class="links auth-popup-links">
+                    <a href="#forgot_panel" class="kl-login-box auth-popup-link">FORGOT YOUR PASSWORD?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="forgot_panel" class="loginbox-popup auth-popup forgot-popup mfp-hide">
+        <div class="inner-container forgot-panel auth-popup-panel">
+            <h3 class="m_title m_title_ext text-custom auth-popup-title" itemprop="alternativeHeadline">FORGOT YOUR DETAILS?</h3>
+            <form id="forgot_form" name="login_form" method="post" class="zn_form_lost_pass" action="http://demo.kallyas.net/membership/lost-password/">
+                <div class="zn_form_login-result"></div>
+                <div class="form-group kl-fancy-form">
+                    <input type="text" id="forgot-email" name="user_login" class="form-control inputbox kl-fancy-form-input kl-fw-input" placeholder="..."/>
+                    <label class="kl-font-alt kl-fancy-form-label">USERNAME OR EMAIL</label>
+                </div>
+                <input type="hidden" name="wc_reset_password" value="true">
+                <input type="hidden" id="_wpnonce" name="_wpnonce" value="5b2a798996"/><input type="hidden" name="_wp_http_referer" value="/membership/"/> <div class="form-group">
+                <input type="submit" id="recover" name="submit" class="btn btn-block zn_sub_button btn-fullcolor btn-md" value="SEND MY DETAILS!"/>
+            </div>
+                <div class="links auth-popup-links">
+                    <a href="#login_panel" class="kl-login-box auth-popup-link">AAH, WAIT, I REMEMBER NOW!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="page_wrapper">
 
     <header-component></header-component>
 
-    <marker class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
-        <div class="kl-slideshow 0 kl-revolution-slider portfolio_devices eluiddc871616  ">
-        <div class="bgback"></div>
-        <link href="http://fonts.googleapis.com/css?family=Poppins%3A700%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all"/>
-        <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background-color:transparent;padding:0px;">
-
-            <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.0.2">
-                <ul>
-                    <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://sc-sport.com/uploads/posts/2013-07/1373962137_11.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-
-                        <img src="http://sc-sport.com/uploads/posts/2013-07/1373962137_11.jpg" alt="" title="Homepage" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-
-
-                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-1" data-x="['center','center','center','center']" data-hoffset="['1','1','1','1']" data-y="['middle','middle','middle','middle']" data-voffset="['-29','-29','-29','-29']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":330,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 144px; line-height: 124px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px;">Lorem<br>
-                            Lorem </div>
-
-                        <div class="tp-caption   tp-resizeme" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['-3','-3','-3','-3']" data-y="['middle','middle','middle','middle']" data-voffset="['123','123','123','123']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 40px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px;">Lorem Lorem - Lorem Lorem </div>
-
-                        <div class="tp-caption rev-btn " id="slide-1-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['479','479','479','479']" data-width="224" data-height="64" data-whitespace="normal" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bs:solid;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 7; min-width: 224px; max-width: 224px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 17px; line-height: 42px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;background-color:rgba(221, 44, 88, 1.00);border-color:rgba(0, 0, 0, 1.00);border-width:0px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Lorem </div>
-
-                        <div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-1-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-40','-40','-40','-40']" data-width="24" data-height="24" data-whitespace="nowrap" data-type="svg" data-svg_src="http://demo.kallyas.net/vertigo-fitness-gym/wp-content/plugins/revslider/public/assets/assets/svg/hardware/ic_keyboard_arrow_down_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; min-width: 24px; max-width: 24px; max-width: 24px; max-width: 24px; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-                            <div class="rs-looped rs-slideloop" data-easing="linearEaseNone" data-speed="0.5" data-xs="0" data-xe="0" data-ys="-15" data-ye="0"> </div></div>
-                    </li>
-
-
-
-                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="http://static.comicvine.com/uploads/original/11121/111218433/4824135-box_ring__02_tb.jpg31a94843-d76b-400b-b94d-ea42356d0077original.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-
-                        <img src="http://static.comicvine.com/uploads/original/11121/111218433/4824135-box_ring__02_tb.jpg31a94843-d76b-400b-b94d-ea42356d0077original.jpg" alt="" title="Homepage" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-
-
-                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-58','-58','-58']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":330,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 144px; line-height: 124px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px;">LOREM IPSUM </div>
-
-                        <div class="tp-caption   tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['31','31','31','31']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"auto:auto;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14; white-space: nowrap; font-size: 68px; line-height: 40px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px;">Lorem & ipsum </div>
-
-                        <div class="tp-caption rev-btn " id="slide-3-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['372','372','372','372']" data-width="268" data-height="64" data-whitespace="normal" data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bs:solid;"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 15; min-width: 268px; max-width: 268px; max-width: 64px; max-width: 64px; white-space: normal; font-size: 17px; line-height: 42px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Poppins;background-color:rgba(221, 44, 88, 1.00);border-color:rgba(0, 0, 0, 1.00);border-width:0px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Lorem impsum sit amet </div>
-
-                        <div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-3-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-40','-40','-40','-40']" data-width="24" data-height="24" data-whitespace="nowrap" data-type="svg" data-svg_src="http://demo.kallyas.net/vertigo-fitness-gym/wp-content/plugins/revslider/public/assets/assets/svg/hardware/ic_keyboard_arrow_down_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 16; min-width: 24px; max-width: 24px; max-width: 24px; max-width: 24px; color: rgba(255, 255, 255, 1.00);border-width:0px;">
-                            <div class="rs-looped rs-slideloop" data-easing="linearEaseNone" data-speed="0.5" data-xs="0" data-xe="0" data-ys="-15" data-ye="0"> </div></div>
-                    </li>
-
-
-
-
-
-
-                </ul>
-                <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
-                if(htmlDiv) {
-                    htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-                }else{
-                    var htmlDiv = document.createElement("div");
-                    htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-                    document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
-                }
-                </script>
-                <div class="tp-bannertimer" style="height: 5px; background-color: rgba(0, 0, 0, 0.15);"></div> </div>
-            <script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
-            if(htmlDiv) {
-                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-            }else{
-                var htmlDiv = document.createElement("div");
-                htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
-                document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
-            }
-            </script>
-            <script type="text/javascript">
-                /******************************************
-                 -	PREPARE PLACEHOLDER FOR SLIDER	-
-                 ******************************************/
-
-                var setREVStartSize=function(){
-                    try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
-                        e.c = jQuery('#rev_slider_1_1');
-                        e.responsiveLevels = [1240,1024,778,480];
-                        e.gridwidth = [1430,1024,778,480];
-                        e.gridheight = [600,600,500,400];
-
-                        e.sliderLayout = "fullscreen";
-                        e.fullScreenAutoWidth='off';
-                        e.fullScreenAlignForce='off';
-                        e.fullScreenOffsetContainer= '';
-                        e.fullScreenOffset='';
-                        if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
-
-                    }catch(d){console.log("Failure at Presize of Slider:"+d)}
-                };
-
-                setREVStartSize();
-
-                var tpj=jQuery;
-
-                var revapi1;
-                tpj(document).ready(function() {
-                    if(tpj("#rev_slider_1_1").revolution == undefined){
-                        revslider_showDoubleJqueryError("#rev_slider_1_1");
-                    }else{
-                        revapi1 = tpj("#rev_slider_1_1").show().revolution({
-                            sliderType:"standard",
-                            jsFileLocation:"//demo.kallyas.net/vertigo-fitness-gym/wp-content/plugins/revslider/public/assets/js/",
-                            sliderLayout:"fullscreen",
-                            dottedOverlay:"none",
-                            delay:9000,
-                            navigation: {
-                                keyboardNavigation:"off",
-                                keyboard_direction: "horizontal",
-                                mouseScrollNavigation:"off",
-                                mouseScrollReverse:"default",
-                                onHoverStop:"on",
-                                touch:{
-                                    touchenabled:"on",
-                                    swipe_threshold: 75,
-                                    swipe_min_touches: 50,
-                                    swipe_direction: "horizontal",
-                                    drag_block_vertical: false
-                                }
-                                ,
-                                arrows: {
-                                    style:"hades",
-                                    enable:true,
-                                    hide_onmobile:true,
-                                    hide_under:600,
-                                    hide_onleave:true,
-                                    hide_delay:200,
-                                    hide_delay_mobile:1200,
-                                    tmp:'<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div></div>',
-                                    left: {
-                                        h_align:"left",
-                                        v_align:"center",
-                                        h_offset:30,
-                                        v_offset:0
-                                    },
-                                    right: {
-                                        h_align:"right",
-                                        v_align:"center",
-                                        h_offset:30,
-                                        v_offset:0
-                                    }
-                                }
-                            },
-                            responsiveLevels:[1240,1024,778,480],
-                            visibilityLevels:[1240,1024,778,480],
-                            gridwidth:[1430,1024,778,480],
-                            gridheight:[600,600,500,400],
-                            lazyType:"none",
-                            parallax: {
-                                type:"mouse",
-                                origo:"slidercenter",
-                                speed:2000,
-                                levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
-                                type:"mouse",
-                            },
-                            shadow:0,
-                            spinner:"spinner2",
-                            stopLoop:"off",
-                            stopAfterLoops:-1,
-                            stopAtSlide:-1,
-                            shuffle:"off",
-                            autoHeight:"off",
-                            fullScreenAutoWidth:"off",
-                            fullScreenAlignForce:"off",
-                            fullScreenOffsetContainer: "",
-                            fullScreenOffset: "",
-                            hideThumbsOnMobile:"off",
-                            hideSliderAtLimit:0,
-                            hideCaptionAtLimit:0,
-                            hideAllCaptionAtLilmit:0,
-                            debugMode:false,
-                            fallbacks: {
-                                simplifyAll:"off",
-                                nextSlideOnWindowFocus:"off",
-                                disableFocusListener:false,
-                            }
-                        });
-                    }
-                });	/*ready*/
-            </script>
-            <script>
-                var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #FFFFFF !important; } ';
-                var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-                if(htmlDiv) {
-                    htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-                }
-                else{
-                    var htmlDiv = document.createElement('div');
-                    htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
-                    document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-                }
-            </script>
-            <script>
-                var htmlDivCss = unescape(".hades.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3Argba%280%2C0%2C0%2C0.25%29%3B%0A%09width%3A100px%3B%0A%09height%3A100px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%7D%0A%0A.hades.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22revicons%22%3B%0A%09font-size%3A30px%3B%0A%09color%3Argba%28255%2C%20255%2C%20255%2C%201%29%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%20100px%3B%0A%09text-align%3A%20center%3B%0A%20%20transition%3A%20background%200.3s%2C%20color%200.3s%3B%0A%7D%0A.hades.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce824%22%3B%0A%7D%0A.hades.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%22%5Ce825%22%3B%0A%7D%0A%0A.hades.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20color%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%20%20%20background%3Argba%28255%2C%20255%2C%20255%2C%201%29%3B%0A%20%7D%0A.hades%20.tp-arr-allwrapper%20%7B%0A%20%20position%3Aabsolute%3B%0A%20%20left%3A100%25%3B%0A%20%20top%3A0px%3B%0A%20%20background%3A%23888%3B%20%0A%20%20width%3A100px%3Bheight%3A100px%3B%0A%20%20-webkit-transition%3A%20all%200.3s%3B%0A%20%20transition%3A%20all%200.3s%3B%0A%20%20-ms-filter%3A%20%22progid%3Adximagetransform.microsoft.alpha%28opacity%3D0%29%22%3B%0A%20%20filter%3A%20alpha%28opacity%3D0%29%3B%0A%20%20-moz-opacity%3A%200.0%3B%0A%20%20-khtml-opacity%3A%200.0%3B%0A%20%20opacity%3A%200.0%3B%0A%20%20-webkit-transform%3A%20rotatey%28-90deg%29%3B%0A%20%20transform%3A%20rotatey%28-90deg%29%3B%0A%20%20-webkit-transform-origin%3A%200%25%2050%25%3B%0A%20%20transform-origin%3A%200%25%2050%25%3B%0A%7D%0A.hades.tp-rightarrow%20.tp-arr-allwrapper%20%7B%0A%20%20%20left%3Aauto%3B%0A%20%20%20right%3A100%25%3B%0A%20%20%20-webkit-transform-origin%3A%20100%25%2050%25%3B%0A%20%20transform-origin%3A%20100%25%2050%25%3B%0A%20%20%20-webkit-transform%3A%20rotatey%2890deg%29%3B%0A%20%20transform%3A%20rotatey%2890deg%29%3B%0A%7D%0A%0A.hades%3Ahover%20.tp-arr-allwrapper%20%7B%0A%20%20%20-ms-filter%3A%20%22progid%3Adximagetransform.microsoft.alpha%28opacity%3D100%29%22%3B%0A%20%20filter%3A%20alpha%28opacity%3D100%29%3B%0A%20%20-moz-opacity%3A%201%3B%0A%20%20-khtml-opacity%3A%201%3B%0A%20%20opacity%3A%201%3B%20%20%0A%20%20%20%20-webkit-transform%3A%20rotatey%280deg%29%3B%0A%20%20transform%3A%20rotatey%280deg%29%3B%0A%0A%20%7D%0A%20%20%20%20%0A.hades%20.tp-arr-iwrapper%20%7B%0A%7D%0A.hades%20.tp-arr-imgholder%20%7B%0A%20%20background-size%3Acover%3B%0A%20%20position%3Aabsolute%3B%0A%20%20top%3A0px%3Bleft%3A0px%3B%0A%20%20width%3A100%25%3Bheight%3A100%25%3B%0A%7D%0A.hades%20.tp-arr-titleholder%20%7B%0A%7D%0A.hades%20.tp-arr-subtitleholder%20%7B%0A%7D%0A%0A");
-                var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
-                if(htmlDiv) {
-                    htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
-                }
-                else{
-                    var htmlDiv = document.createElement('div');
-                    htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
-                    document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
-                }
-            </script>
-        </div>
-        <div class="th-sparkles"></div>
-        <div class="zn_header_bottom_style"></div>
-        </div>
-
-
-        <ui-gmap-google-map
-                center='map.center'
-                zoom='map.zoom'
-                events='{
-                    click: map.onClick
-                }'
-                refresh='true'
-        >
-
-            <ui-gmap-marker
-                    ng-repeat="m in markers"
-                    ng-click="map.refresh()"
-                    coords='m'
-                    idkey='m.id'
-                    events="m.events"
-                    options="m.opts"
-           >
-                <ui-gmap-marker coords="map.waterfall" idkey="1" options="map.waterfall.opts"
-                                events="map.waterfall.events"></ui-gmap-marker>
-                <ui-gmap-window show="m.showWindow" closeClick="'closeClick'" ng-cloak>
-                    <div>
-                        <p>This is an info window at {{ m.latitude | number:4 }}, {{ m.longitude | number:4 }}!</p>
-                        <p class="muted">My marker will stay open when the window is popped up!</p>
+    <div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0"> <section class="zn_section eluid75ca258f     section-sidemargins    zn_section--relative section--no " id="eluid75ca258f">
+        <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/kallyas-landingpage.jpg);background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div>
+        <div class="zn_section_size container custom_width_perc zn-section-height--custom_height zn-section-content_algn--middle ">
+            <div class="row ">
+                <div class="eluid76d2c1a9      col-md-12 col-sm-12   znColumnElement" id="eluid76d2c1a9">
+                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                        <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidf253c69d  zn_text_box-light element-scheme--light"><p><span style="line-height: 38px;"><span style="font-size: 74px; font-weight: 100;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Membership</span></span></span></span></p>
+                            <p><span style="line-height: 38px;"><span style="font-size: 74px; font-weight: 100;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Business Model.</span></span></span></span></p>
+                        </div><div class="zn_text_box eluid828af266  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 10px;"><span style="font-size: 24px; color: #333333;"><span style="font-family: Ubuntu; font-weight: 300;">Get access to 200+ Premium WP Themes .</span></span></span></h6>
+                        </div><div class="zn_buttons_element eluid7b7492a1 text-left "><a href="#eluidef1b928a" id="eluid7b7492a10" class="eluid7b7492a10 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" data-target="smoothscroll" itemprop="url"><span>Start Now</span></a></div> </div>
                     </div>
-                </ui-gmap-window>
-            </ui-gmap-marker>
-
-        </ui-gmap-google-map>
-
-
-
-        <section class="zn_section eluidddf4d221     section-sidemargins    zn_section--relative section--no " id="eluidddf4d221">
-            <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/man-791049_1280.jpg);background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div><div class="kl-bg-source__overlay " style="background-color:rgba(0,0,0,0.85)"></div></div>
-            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                <div class="row zn_columns_container zn_content " data-droplevel="1">
-                    <div class="eluid24bb7777      col-md-12 col-sm-12   znColumnElement" id="eluid24bb7777">
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="zn_section eluid0cfe4e3d     section-sidemargins    section--no " id="eluid0cfe4e3d">
+            <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluid30f7c115      col-md-12 col-sm-12   znColumnElement" id="eluid30f7c115">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                <div class="statistic-box__container eluid9bd9a4f8  statistic-box--light element-scheme--light statistic-box--stl-style2"><div class="statistic-box  ">
-                                    <div class="statistic-box__icon-holder">
-                                        <span class="statistic-box__icon" data-zniconfam="icomoon" data-zn_icon=""></span>
-                                    </div>
-                                    <div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title" itemprop="headline">25000+</h4><div class="statistic-box__content">Lorem ipsum</div></div></div><div class="statistic-box  ">
-                                    <div class="statistic-box__icon-holder">
-                                        <span class="statistic-box__icon" data-zniconfam="icomoon" data-zn_icon=""></span>
-                                    </div>
-                                    <div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title" itemprop="headline">150+</h4><div class="statistic-box__content">Lorem ipsum</div></div></div><div class="statistic-box  ">
-                                    <div class="statistic-box__icon-holder">
-                                        <span class="statistic-box__icon" data-zniconfam="icomoon" data-zn_icon=""></span>
-                                    </div>
-                                    <div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title" itemprop="headline">9900+</h4><div class="statistic-box__content">Lorem ipsum</div></div></div><div class="statistic-box  ">
-                                    <div class="statistic-box__icon-holder">
-                                        <span class="statistic-box__icon" data-zniconfam="icomoon" data-zn_icon=""></span>
-                                    </div>
-                                    <div class="statistic-box__line"></div><div class="statistic-box__details"><h4 class="statistic-box__title" itemprop="headline">180+</h4><div class="statistic-box__content">Lorem ipsum</div></div></div></div> </div>
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid25b7987a  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">We craft ecosystems that grow businesses.</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluid30f2a215  zn_text_box-light element-scheme--light"><p style="text-align: center;"><span style="font-size:16px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">We're a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</span></span></span></p>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidb6493ab6      col-md-4 col-sm-4   znColumnElement" id="eluidb6493ab6">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid4719a19b   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-1.jpg" alt="" title="thumbnail-1.jpg"/></div></a></div><div class="zn_text_box eluid2fcc973b  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">User experience</span></span></span></h6>
+                            </div><div class="zn_text_box eluid2486384b  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Update your online business experience to 2017 standards. Encrease your earnings.</span></span></span></p>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid264be3dc      col-md-4 col-sm-4   znColumnElement" id="eluid264be3dc">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid54b6696f   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-2.jpg" alt="" title="thumbnail-2.jpg"/></div></a></div><div class="zn_text_box eluidf212c74a  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Social Media</span></span></span></h6>
+                            </div><div class="zn_text_box eluid2e8af500  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Update your online business experience to 2017 standards. Encrease your earnings.</span></span></span></p>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid6641057b      col-md-4 col-sm-4   znColumnElement" id="eluid6641057b">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid0d5131f6   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-3.jpg" alt="" title="thumbnail-3.jpg"/></div></a></div><div class="zn_text_box eluid5b9abd6f  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Branding</span></span></span></h6>
+                            </div><div class="zn_text_box eluidd0797a84  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Update your online business experience to 2017 standards. Encrease your earnings.</span></span></span></p>
+                            </div> </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <section class="zn_section eluid40c9974d     section-sidemargins    section--no " id="eluid40c9974d">
-            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                <div class="row zn_columns_container zn_content " data-droplevel="1">
-                    <div class="eluida6ea3e30      col-md-12 col-sm-12   znColumnElement" id="eluida6ea3e30">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluiddf9f5322 "><h2 class="tbk__title" itemprop="headline">Lorem</h2></div> </div>
+        <section class="zn_section eluid5bb4545c     section-sidemargins    zn_section--relative section--no " id="eluid5bb4545c">
+            <div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row gutter-0">
+                    <div class="eluid055071be      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidecee6066  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">History</span></span></span></span></h6>
+                            </div> <div class="zn_separator clearfix eluid15c8fa9a zn_separator--icon-no "></div>
+                                <div class="zn_text_box eluid798689fe  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></span></p>
+                                </div> </div>
                         </div>
                     </div>
-                    <div class="eluidf0bf6187      col-md-4 col-sm-4   znColumnElement" id="eluidf0bf6187">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                <div class="media-container eluid749b9a48  media-container--type-pb kl-overlay-none  ">
-                                    <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/vertigo-fitness-gym/wp-content/uploads/sites/8/2016/07/image_03.jpg);background-repeat:repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div><div class="media-container-pb media-container-pb--alg-bottom"><div class="row zn_columns_container zn_content zn_col_container-media_container" data-droplevel="1">
-                                    <div class="eluidc618840d      col-md-12 col-sm-12   znColumnElement" id="eluidc618840d">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidc858c440 "><h3 class="tbk__title" itemprop="headline">Lorem</h3><h4 class="tbk__subtitle" itemprop="alternativeHeadline">Lorem ipsum dolor sit amet</h4></div> </div>
-                                        </div>
-                                    </div>
-                                    <div class="eluiddb272e56      col-md-12 col-sm-12   znColumnElement" id="eluiddb272e56">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="prt-hover-slidein ph-eluid5c9747af"><div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid5c9747af "><div class="tbk__text"><p><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</span></p>
-                                                </div></div></div><div class="prt-hover-slidein ph-eluidf9176c15"><div class="zn_buttons_element eluidf9176c15 text-center "><a href="" id="eluidf9176c150" class="eluidf9176c150 btn-element btn-element-0 btn  btn-fullcolor   zn_dummy_value btn-icon--before btn--square" target="_self" itemprop="url"><span>Lorem</span></a></div></div> </div>
-                                        </div>
-                                    </div>
-                                    <div class="eluid784b26df      col-md-12 col-sm-12   znColumnElement" id="eluid784b26df">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="th-spacer clearfix eluid87692b17     "></div> </div>
-                                        </div>
-                                    </div>
-                                </div></div>
-                                </div>
-                                <div class="th-spacer clearfix eluidbf6685a3     "></div> </div>
+                    <div class="eluid64058639      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid3f272c9a   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-4.jpg" alt="" title="thumbnail-4.jpg"/></div></div></div> </div>
                         </div>
                     </div>
-                    <div class="eluidcc62b416      col-md-4 col-sm-4   znColumnElement" id="eluidcc62b416">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                <div class="media-container eluid7849d173  media-container--type-pb kl-overlay-none  ">
-                                    <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/vertigo-fitness-gym/wp-content/uploads/sites/8/2016/07/image_04.jpg);background-repeat:repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div><div class="media-container-pb media-container-pb--alg-bottom"><div class="row zn_columns_container zn_content zn_col_container-media_container" data-droplevel="1">
-                                    <div class="eluidf8604f3c      col-md-12 col-sm-12   znColumnElement" id="eluidf8604f3c">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid5a6e4133 "><h3 class="tbk__title" itemprop="headline">Lorem</h3><h4 class="tbk__subtitle" itemprop="alternativeHeadline">Lorem ipsum dolor sit amet</h4></div> </div>
-                                        </div>
-                                    </div>
-                                    <div class="eluid06071047      col-md-12 col-sm-12   znColumnElement" id="eluid06071047">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="prt-hover-slidein ph-eluid79470164"><div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid79470164 "><div class="tbk__text"><p><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</span></p>
-                                                </div></div></div><div class="prt-hover-slidein ph-eluidf2da6ab9"><div class="zn_buttons_element eluidf2da6ab9 text-center "><a href="" id="eluidf2da6ab90" class="eluidf2da6ab90 btn-element btn-element-0 btn  btn-fullcolor   zn_dummy_value btn-icon--before btn--square" target="_self" itemprop="url"><span>Lorem</span></a></div></div> </div>
-                                        </div>
-                                    </div>
-                                    <div class="eluid76139895      col-md-12 col-sm-12   znColumnElement" id="eluid76139895">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="th-spacer clearfix eluid07ca6e33     "></div> </div>
-                                        </div>
-                                    </div>
-                                </div></div>
-                                </div>
-                                <div class="th-spacer clearfix eluidbc9c3697     "></div> </div>
+                    <div class="eluida2eba02b      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluided2b57e3  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">Who we are</span></span></span></span></h6>
+                            </div> <div class="zn_separator clearfix eluid32fc4f45 zn_separator--icon-no "></div>
+                                <div class="zn_text_box eluid7af6024a  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></span></p>
+                                </div> </div>
                         </div>
                     </div>
-                    <div class="eluid218f0ad0      col-md-4 col-sm-4   znColumnElement" id="eluid218f0ad0">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                <div class="media-container eluida53b0257  media-container--type-pb kl-overlay-none  ">
-                                    <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/vertigo-fitness-gym/wp-content/uploads/sites/8/2016/07/image_05.jpg);background-repeat:repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div><div class="media-container-pb media-container-pb--alg-bottom"><div class="row zn_columns_container zn_content zn_col_container-media_container" data-droplevel="1">
-                                    <div class="eluidac9ae024      col-md-12 col-sm-12   znColumnElement" id="eluidac9ae024">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid0527d7e4 "><h3 class="tbk__title" itemprop="headline">Lorem</h3><h4 class="tbk__subtitle" itemprop="alternativeHeadline">Lorem ipsum dolor sit amet</h4></div> </div>
+                    <div class="eluided7b32b8      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidda8d557c   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-5.jpg" alt="" title="thumbnail-5.jpg"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid5357c398      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid997b5639  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">What we do</span></span></span></span></h6>
+                            </div> <div class="zn_separator clearfix eluid299671d7 zn_separator--icon-no "></div>
+                                <div class="zn_text_box eluid67202f07  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></span></p>
+                                </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid1af52d34      col-md-8 col-sm-8   znColumnElement" id="eluid055071be">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="zn_custom_container eluid4412ba39  smart-cnt--default   clearfix">
+                                    <div class="row zn_col_container-smart_container gutter-0">
+                                        <div class="eluidd75bdb67      col-md-6 col-sm-6   znColumnElement" id="eluidd75bdb67">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                                                <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidc4c353be  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">Awards</span></span></span></span></h6>
+                                                </div> <div class="zn_separator clearfix eluid0fa43bbf zn_separator--icon-no "></div>
+                                                    <div class="zn_text_box eluid5538c481  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></span></p>
+                                                    </div> </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluid3160fc4d      col-md-6 col-sm-6   znColumnElement" id="eluid3160fc4d">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidb9c0ccfa   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/illustration2.png" alt="" title="illustration2.png"/></div></div></div> </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="eluid2fe62a4c      col-md-12 col-sm-12   znColumnElement" id="eluid2fe62a4c">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="prt-hover-slidein ph-eluidb9a4026c"><div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidb9a4026c "><div class="tbk__text"><p><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</span></p>
-                                                </div></div></div><div class="prt-hover-slidein ph-eluid08688c21"><div class="zn_buttons_element eluid08688c21 text-center "><a href="" id="eluid08688c210" class="eluid08688c210 btn-element btn-element-0 btn  btn-fullcolor   zn_dummy_value btn-icon--before btn--square" target="_self" itemprop="url"><span>Lorem</span></a></div></div> </div>
-                                        </div>
-                                    </div>
-                                    <div class="eluidab2b2b2a      col-md-12 col-sm-12   znColumnElement" id="eluidab2b2b2a">
-                                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                            <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                                <div class="th-spacer clearfix eluid0f7d7b2f     "></div> </div>
-                                        </div>
-                                    </div>
-                                </div></div>
                                 </div>
-                                <div class="th-spacer clearfix eluid891c35ff     "></div> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eluid89e3c984      col-md-4 col-sm-4   znColumnElement" id="eluid89e3c984">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="media-container eluid25a18faa  media-container--type-pb kl-overlay-none  ">
+                                <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/thumbnail-6.jpg);background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div><div class="media-container-pb media-container-pb--alg-bottom"><div class="row zn_col_container-media_container ">
+                                <div class="eluid691ab98d      col-md-12 col-sm-12   znColumnElement" id="eluid691ab98d">
+                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                        <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid076764c4  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px; color: #ffffff;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;">Goal</span></span></span></h6>
+                                        </div> <div class="zn_separator clearfix eluid99009b1a zn_separator--icon-no "></div>
+                                            <div class="zn_text_box eluid384e332e  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size: 13px; color: #cccccc;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></p>
+                                            </div> </div>
+                                    </div>
+                                </div>
+                            </div></div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-    </div>
-        <div class="znpb-footer-smart-area">
-            <section class="zn_section eluidf3608cd8     section-sidemargins    zn_section--relative section--no " id="eluidf3608cd8">
-                <div class="kl-bg-source "><div class="kl-bg-source__overlay " style="background:rgba(205,33,34,1); background: -moz-linear-gradient(left, rgba(205,33,34,1) 0%, rgba(245,72,76,1) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(205,33,34,1)), color-stop(100%,rgba(245,72,76,1))); background: -webkit-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: -o-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: -ms-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: linear-gradient(to right, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); "></div></div>
-                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                    <div class="row ">
-                        <div class="eluid874b92a1      col-md-12 col-sm-12   znColumnElement" id="eluid874b92a1">
-                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                <div class="znColumnElement-innerContent"> <div class="kl-title-block clearfix tbk--text-light tbk--center text-center tbk-symbol--line  tbk-icon-pos--after-title eluide82ea897 "><h3 class="tbk__title" itemprop="headline">Отзывы и партнеры</h3><span class="tbk__symbol "><span></span></span></div>
-                                    <div class="testimonials-partners eluid046edef1  testimonials-partners--light element-scheme--light">
-                                        <div class="ts-pt-testimonials clearfix">
-                                            <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-2 ts-pt-testimonials__item--normal" style="margin-top:20px; ">
-                                                <div class="ts-pt-testimonials__text">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</div>
-                                                <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
-                                                    <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/t2.jpg" width="128" height="128" alt="" title="t2.jpg">
-                                                    <h4 class="ts-pt-testimonials__name" itemprop="headline">Lorem ipsum</h4>
-                                                    <div class="ts-pt-testimonials__position">LOREM Inc.</div>
-                                                    <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--5">
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                    </div>
-                                                </div>
+        <section class="zn_section eluidc813d8dd     section-sidemargins    section--no " id="eluidc813d8dd">
+            <div class="zn_section_size full_width zn-section-height--custom_height zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluid3731a201      col-md-6 col-sm-10  col-lg-7 znColumnElement" id="eluid3731a201">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid43e903e9 "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/device-b.jpg" alt="" title="device-b.jpg"/></div></div></div><div class="kl-iconbox eluid105c7ef1 playbutton  kl-iconbox--type-img   kl-iconbox--align-center text-center kl-iconbox--theme-light element-scheme--light">
+                                <div class="kl-iconbox__inner clearfix">
+                                    <div class="kl-iconbox__icon-wrapper ">
+                                        <a href="https://www.youtube.com/watch?v=e452W2Kj-yg" class="kl-iconbox__link" data-lightbox="iframe" itemprop="url"><img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/play-button.png" width="122" height="122" alt="" title="play-button.png"></a> </div>
+                                    <div class="kl-iconbox__content-wrapper">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eluidc8ad75fe      col-md-6 col-sm-12  col-lg-5 znColumnElement" id="eluidc8ad75fe">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidb58718b8  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 42px;"><span style="font-size: 39px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="color: #000000;">Look like an expert right from the start.</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluid94f61f9b  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 10px;"><span style="font-size: 24px; color: #333333;"><span style="font-family: Ubuntu; font-weight: 300;">Get all our proffesional themes.</span></span></span></h6>
+                            </div><div class="kl-iconbox eluida2ac62ba   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                <div class="kl-iconbox__inner clearfix">
+                                    <div class="kl-iconbox__icon-wrapper ">
+                                        <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon1.png" width="53" height="46" alt="" title="icon1.png"> </div>
+                                    <div class="kl-iconbox__content-wrapper">
+                                        <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                            <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Stunning Page Builder</h3>
+                                        </div>
+                                        <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                            <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="kl-iconbox eluid2e742bc6   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                    <div class="kl-iconbox__inner clearfix">
+                                        <div class="kl-iconbox__icon-wrapper ">
+                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon2.png" width="53" height="39" alt="" title="icon2.png"> </div>
+                                        <div class="kl-iconbox__content-wrapper">
+                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Iconic Awarded Design</h3>
                                             </div>
-                                            <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-1 ts-pt-testimonials__item--normal" style=" ">
-                                                <div class="ts-pt-testimonials__text">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </div>
-                                                <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
-                                                    <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/t1-res.jpg" width="60" height="60" alt="" title="t1-res.jpg">
-                                                    <h4 class="ts-pt-testimonials__name" itemprop="headline">Lorem ipsum</h4>
-                                                    <div class="ts-pt-testimonials__position">LOREM Inc.</div>
-                                                    <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--4">
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-1 ts-pt-testimonials__item--reversed" style=" ">
-                                                <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
-                                                    <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2016/06/t3-res.jpg" width="60" height="60" alt="" title="t3-res.jpg">
-                                                    <h4 class="ts-pt-testimonials__name" itemprop="headline">Lorem ipsum</h4>
-                                                    <div class="ts-pt-testimonials__position">LOREM Inc.</div>
-                                                    <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--5">
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                        <span class="glyphicon glyphicon-star"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="ts-pt-testimonials__text">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </div>
+                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
                                             </div>
                                         </div>
-                                        <div class="testimonials-partners__separator clearfix"></div>
-                                        <div class="ts-pt-partners ts-pt-partners--y-title clearfix">
-                                            <div class="ts-pt-partners__title">TECHNOLOGIES</div>
-                                            <div class="ts-pt-partners__carousel-wrapper">
-                                                <div class="ts-pt-partners__carousel js-slick slick-initialized slick-slider slickSlider--activated" data-slick="{&quot;infinite&quot;:true,&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:3000,&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:1,&quot;waitForAnimate&quot;:false,&quot;speed&quot;:0,&quot;swipe&quot;:false,&quot;arrows&quot;:false,&quot;respondTo&quot;:&quot;slider&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:1024,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}},{&quot;breakpoint&quot;:767,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:520,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:380,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}}]}">
-
-
-
-
-
-
-
-
-                                                    <div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3568px; transform: translate3d(-892px, 0px, 0px);" role="listbox"><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="-4" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo5.svg" alt="" title="logo5.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="-3" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo6.svg" alt="" title="logo6.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="-2" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo7.svg" alt="" title="logo7.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo8.svg" alt="" title="logo8.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-current slick-active slick-item--activated" style="width: 223px;" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide20">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="0">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo1.svg" alt="" title="logo1.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-active" style="width: 223px;" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide21">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="0">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo2.svg" alt="" title="logo2.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-active" style="width: 223px;" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide22">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="0">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo3.svg" alt="" title="logo3.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-active" style="width: 223px;" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide23">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="0">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo4.svg" alt="" title="logo4.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide" style="width: 223px;" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide24">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo5.svg" alt="" title="logo5.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide" style="width: 223px;" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide25">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo6.svg" alt="" title="logo6.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide" style="width: 223px;" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide26">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo7.svg" alt="" title="logo7.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide" style="width: 223px;" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide27">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo8.svg" alt="" title="logo8.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="8" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo1.svg" alt="" title="logo1.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="9" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo2.svg" alt="" title="logo2.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="10" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo3.svg" alt="" title="logo3.svg">
-                                                        </a>
-                                                    </div><div class="ts-pt-partners__carousel-item slick-slide slick-cloned" style="width: 223px;" data-slick-index="11" aria-hidden="true" tabindex="-1">
-                                                        <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url" tabindex="-1">
-                                                            <img class="ts-pt-partners__img img-responsive" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/wp-content/uploads/2015/08/logo4.svg" alt="" title="logo4.svg">
-                                                        </a>
-                                                    </div></div></div></div>
+                                    </div>
+                                </div>
+                                <div class="kl-iconbox eluid6f295427   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                    <div class="kl-iconbox__inner clearfix">
+                                        <div class="kl-iconbox__icon-wrapper ">
+                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon6.png" width="45" height="50" alt="" title="icon6.png"> </div>
+                                        <div class="kl-iconbox__content-wrapper">
+                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">eCommerce Ready</h3>
+                                            </div>
+                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zn_buttons_element eluid3c021ab6 text-left "><a href="http://demo.kallyas.net/membership/shop/" id="eluid3c021ab60" class="eluid3c021ab60 btn-element btn-element-0 btn  btn-fullcolor btn-custom-color btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>Start Now</span></a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="zn_section eluidef1b928a   zn_parallax  section-sidemargins    zn_section--relative section--no " id="eluidef1b928a">
+            <div class="kl-bg-source znParallax-background"><div class="kl-bg-source__parallaxWrapper zn-parallaxHack--center"><img class="kl-bg-source__bgimage ww cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/parallax-background.jpg"></div></div>
+            <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluidfefa539b      col-md-12 col-sm-12   znColumnElement" id="eluidfefa539b">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid6108e1f5  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 48px; color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Pick your plan</span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid9b39297a border-right     col-md-4 col-sm-4   znColumnElement" id="eluid9b39297a">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluida28d00bf  zn_text_box-light element-scheme--light"><h2 style="text-align: center;"><span style="font-family: Lato;"><span style="color: #c89d28;"><span style="line-height: 19px;"><span style="font-size: 30px; position:relative; top:-35px; ">$</span></span><span style="line-height: 30px;"><span style="font-size: 80px;">59</span></span></span></span></h2>
+                            </div><div class="zn_text_box eluid2aa7dcfd  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:22px;"><span style="color: rgb(255, 255, 255);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Single License</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluid30c49a64  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">1 theme included.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">1 year of theme updates &amp; support.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">20% off future purchases.</span></span></span></span></h6>
+                            </div><div class="zn_buttons_element eluid87c7360f text-center "><a href="http://demo.kallyas.net/membership/membership-account/" id="eluid87c7360f0" class="eluid87c7360f0 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>View</span></a></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid87cccec2 border-right     col-md-4 col-sm-4   znColumnElement" id="eluid87cccec2">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid95a9b214  zn_text_box-light element-scheme--light"><h2 style="text-align: center;"><span style="font-family: Lato;"><span style="color: #c89d28;"><span style="line-height: 19px;"><span style="font-size: 30px; position:relative; top:-35px; ">$</span></span><span style="line-height: 30px;"><span style="font-size: 80px;">199</span></span></span></span></h2>
+                            </div><div class="zn_text_box eluid55dc4e74  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:22px;"><span style="color: rgb(255, 255, 255);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">1 Year Membership</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluid3795c09d  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">All themes included.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">1 year of theme updates &amp; support.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Access all new themes.</span></span></span></span></h6>
+                            </div><div class="zn_buttons_element eluid6826a84c text-center "><a href="http://demo.kallyas.net/membership/membership-account/" id="eluid6826a84c0" class="eluid6826a84c0 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>sign up today</span></a></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid9e7de1f3      col-md-4 col-sm-4   znColumnElement" id="eluid9e7de1f3">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid4abfb9a5  zn_text_box-light element-scheme--light"><h2 style="text-align: center;"><span style="font-family: Lato;"><span style="color: #c89d28;"><span style="line-height: 19px;"><span style="font-size: 30px; position:relative; top:-35px; ">$</span></span><span style="line-height: 30px;"><span style="font-size: 80px;">399</span></span></span></span></h2>
+                            </div><div class="zn_text_box eluid77a1db5b  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:22px;"><span style="color: rgb(255, 255, 255);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Forever Membership</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluida3f218a1  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">All themes included.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Unlimited theme updates &amp; Support.</span></span></span></span></h6>
+                                <h6 style="text-align: center;"><span style="font-size:14px;"><span style="color: rgb(153, 153, 153);"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Access all new themes.</span></span></span></span></h6>
+                            </div><div class="zn_buttons_element eluidab84323a text-center "><a href="http://demo.kallyas.net/membership/membership-account/" id="eluidab84323a0" class="eluidab84323a0 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>sign up today</span></a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="zn_section eluid830190ea     section-sidemargins    section--no " id="eluid830190ea">
+            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluid4564f3a3      col-md-12 col-sm-12   znColumnElement" id="eluid4564f3a3">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidccecce91  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 48px;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="color: #000000;">Latest News</span></span></span></span></h6>
+                            </div>
+                                <div class="znBpl eluiddda8f93c ">
+                                    <div class="znBpl-mainRow fxb">
+                                        <div class="fxb-col">
+                                            <div class="znBpl-bPost znBpl-bPost--big ">
+                                                <div class="znBpl-bPost-imgWrapper"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-01-800x800.jpg" width="800" height="800" alt="" title="bpost-01.jpg" class=" znBpl-bPost-img cover-fit-img"/><ul class="post-categories">
+                                                    <li><a href="http://demo.kallyas.net/membership/category/wordpress/" rel="category tag">WordPress</a></li></ul></div>
+                                                <div class="znBpl-bPost-header">
+                                                    <div class="znBpl-bPost-headerInner">
+                                                        <h2 class="znBpl-bPost-title"><a href="http://demo.kallyas.net/membership/2017/02/01/top-10-most-popular-premium-wordpress-themes-of-2017/" rel="bookmark">Top 10 Most Popular Premium WordPress Themes of 2017.</a></h2> <div class="znBpl-bPost-info">
+                                                        February 1, 2017 BY <a href="http://demo.kallyas.net/membership/author/mihai/">mihai</a> </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fxb-col">
+                                            <div class="row znBpl-bPost-smallRow">
+                                                <div class="col-sm-6">
+                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                        <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/a-branding-tool-for-everything-and-everyone/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-02-480x280.jpg" width="480" height="280" alt="" title="bpost-02.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
+                                                            <li><a href="http://demo.kallyas.net/membership/category/graphic-design/" rel="category tag">Graphic Design</a></li></ul></div>
+                                                        <div class="znBpl-bPost-header">
+                                                            <div class="znBpl-bPost-headerInner">
+                                                                <h2 class="znBpl-bPost-title"><a href="http://demo.kallyas.net/membership/2017/02/21/a-branding-tool-for-everything-and-everyone/" rel="bookmark">A Branding Tool for Everything and Everyone.</a></h2> <div class="znBpl-bPost-info">
+                                                                February 21, 2017 by <a href="http://demo.kallyas.net/membership/author/mihai/">mihai</a> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                        <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-03-480x280.jpg" width="480" height="280" alt="" title="bpost-03.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
+                                                            <li><a href="http://demo.kallyas.net/membership/category/creative/" rel="category tag">Creative</a></li>
+                                                            <li><a href="http://demo.kallyas.net/membership/category/seo/" rel="category tag">Seo</a></li></ul></div>
+                                                        <div class="znBpl-bPost-header">
+                                                            <div class="znBpl-bPost-headerInner">
+                                                                <h2 class="znBpl-bPost-title"><a href="http://demo.kallyas.net/membership/2017/02/21/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed/" rel="bookmark">4 Ways Artificial Intelligence Changes the Game for SEO.</a></h2> <div class="znBpl-bPost-info">
+                                                                February 21, 2017 by <a href="http://demo.kallyas.net/membership/author/mihai/">mihai</a> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div> <div class="col-sm-6">
+                                                <div class="znBpl-bPost znBpl-bPost--small">
+                                                    <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/case-study-10-lessons-from-a-successful-startup/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-04-480x280.jpg" width="480" height="280" alt="" title="bpost-04.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
+                                                        <li><a href="http://demo.kallyas.net/membership/category/apps/" rel="category tag">Apps</a></li></ul></div>
+                                                    <div class="znBpl-bPost-header">
+                                                        <div class="znBpl-bPost-headerInner">
+                                                            <h2 class="znBpl-bPost-title"><a href="http://demo.kallyas.net/membership/2017/02/21/case-study-10-lessons-from-a-successful-startup/" rel="bookmark">Case Study: 10 Lessons from a Successful Startup.</a></h2> <div class="znBpl-bPost-info">
+                                                            February 21, 2017 by <a href="http://demo.kallyas.net/membership/author/mihai/">mihai</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="col-sm-6">
+                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                        <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/what-youre-missing-with-seo-that-will-make-a-world-of-difference/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-05-480x280.jpg" width="480" height="280" alt="" title="bpost-05.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
+                                                            <li><a href="http://demo.kallyas.net/membership/category/seo/" rel="category tag">Seo</a></li></ul></div>
+                                                        <div class="znBpl-bPost-header">
+                                                            <div class="znBpl-bPost-headerInner">
+                                                                <h2 class="znBpl-bPost-title"><a href="http://demo.kallyas.net/membership/2017/02/21/what-youre-missing-with-seo-that-will-make-a-world-of-difference/" rel="bookmark">What You’re Missing with SEO that will Make a World of Difference.</a></h2> <div class="znBpl-bPost-info">
+                                                                February 21, 2017 by <a href="http://demo.kallyas.net/membership/author/mihai/">mihai</a> </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="th-spacer clearfix eluid5f52a9fe     "></div><div class="zn_buttons_element eluid50f37192 text-center "><a href="http://demo.kallyas.net/membership/blog/" id="eluid50f371920" class="eluid50f371920 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>Read more</span></a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="zn_section eluidec5db0d8     section-sidemargins    section--no " id="eluidec5db0d8">
+            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row ">
+                    <div class="eluid078a978b      col-md-4 col-sm-4   znColumnElement" id="eluid078a978b">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid0e031a93  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">We've got you covered.</span></span></span></span></h6>
+                            </div> <div class="zn_separator clearfix eluidc4263108 zn_separator--icon-no "></div>
+                                <div class="zn_text_box eluid6f341c2c  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:16px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Intuitive drag and drop Page Builder. Stunning themes. Over 100 Elements. Creating your beautiful website has never been easier.</span></span></span></p>
+                                </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidb3343552      col-md-8 col-sm-8   znColumnElement" id="eluidb3343552">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="zn_custom_container eluidcd420427  smart-cnt--default   clearfix">
+                                    <div class="row zn_col_container-smart_container ">
+                                        <div class="eluida7b3b0c9      col-md-6 col-sm-6   znColumnElement" id="eluida7b3b0c9">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid884a0cfc   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon1.png" alt="" title="icon1.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Stunning Page Builder</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">Setup pages and content like a PRO. Coding is not required and a handy documentation is included.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluidfc297dc5      col-md-6 col-sm-6   znColumnElement" id="eluidfc297dc5">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid95027c26   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon2.png" alt="" title="icon2.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Iconic Awarded Design</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">This design is featured across the
+                                                                    marketplaces and awarded for it's looks. Walkthrough and enjoy the visuals.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluid2cf98f44      col-md-12 col-sm-12   znColumnElement" id="eluid2cf98f44">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="th-spacer clearfix eluid01478233     "></div> </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluid754fac51      col-md-6 col-sm-6   znColumnElement" id="eluid754fac51">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluidedcc9345   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon3.png" width="55" height="55" alt="" title="icon3.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Featurewise Complete</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">Without a doubt, Kallyas is one of the most complete WordPress themes on the market, being packed with all the goodies and sweet gems.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluidcf62eeb8      col-md-6 col-sm-6   znColumnElement" id="eluidcf62eeb8">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid457261de   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon4.png" width="47" height="53" alt="" title="icon4.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Mature Project</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluid58390336      col-md-12 col-sm-12   znColumnElement" id="eluid58390336">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="th-spacer clearfix eluidecb4ad4f     "></div> </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluideacbbed7      col-md-6 col-sm-6   znColumnElement" id="eluideacbbed7">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid38dc5273   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon5.png" width="55" height="47" alt="" title="icon5.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Rescue support</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="eluid1672c569      col-md-6 col-sm-6   znColumnElement" id="eluid1672c569">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid3da57ebe   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon6.png" alt="" title="icon6.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">e-Commerce Ready</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -515,72 +528,192 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="zn_section eluidb9c81fd8     section-sidemargins    zn_section--inlinemodal mfp-hide zn_section--stretch-container  section--no " id="schedule-form">
-                <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                    <div class="row zn_columns_container zn_content " data-droplevel="1">
-                        <div class="eluid51945201      col-md-12 col-sm-12   znColumnElement" id="eluid51945201">
-                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-                                    <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluid02f1c5e3 "><h3 class="tbk__title" itemprop="headline">SCHEDULE AN APPOINTMENT</h3></div><div class="zn_custom_html eluid57c6d467 ">
-                                    <div id="bookly-form-58a7077c8e721" class="bookly-form" data-form_id="58a7077c8e721">
-                                        <div style="text-align: center"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/vertigo-fitness-gym/wp-includes/js/tinymce/skins/lightgray/img/loader.gif" alt="Loading..."/></div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        (function (win, fn) {
-                                            var done = false, top = true,
-                                                doc = win.document,
-                                                root = doc.documentElement,
-                                                modern = doc.addEventListener,
-                                                add = modern ? 'addEventListener' : 'attachEvent',
-                                                rem = modern ? 'removeEventListener' : 'detachEvent',
-                                                pre = modern ? '' : 'on',
-                                                init = function(e) {
-                                                    if (e.type == 'readystatechange') if (doc.readyState != 'complete') return;
-                                                    (e.type == 'load' ? win : doc)[rem](pre + e.type, init, false);
-                                                    if (!done) { done = true; fn.call(win, e.type || e); }
-                                                },
-                                                poll = function() {
-                                                    try { root.doScroll('left'); } catch(e) { setTimeout(poll, 50); return; }
-                                                    init('poll');
-                                                };
-                                            if (doc.readyState == 'complete') fn.call(win, 'lazy');
-                                            else {
-                                                if (!modern) if (root.doScroll) {
-                                                    try { top = !win.frameElement; } catch(e) { }
-                                                    if (top) poll();
-                                                }
-                                                doc[add](pre + 'DOMContentLoaded', init, false);
-                                                doc[add](pre + 'readystatechange', init, false);
-                                                win[add](pre + 'load', init, false);
-                                            }
-                                        })(window, function() {
-                                            window.bookly({
-                                                ajaxurl        : "http:\/\/demo.kallyas.net\/vertigo-fitness-gym\/wp-admin\/admin-ajax.php",
-                                                form_id        : "58a7077c8e721",
-                                                attributes     : {"location_id":0,"category_id":0,"service_id":0,"staff_member_id":0,"hide_categories":false,"hide_services":false,"hide_staff_members":false,"hide_date":false,"hide_week_days":false,"hide_time_range":false,"show_number_of_persons":true,"hide_locations":true,"hide_quantity":true},
-                                                status         : {"booking":"new"},
-                                                start_of_week  : 1,
-                                                show_calendar  : 0,
-                                                required       : {"staff":0},
-                                                skip_steps     : {"service_part1":0,"service_part2":0,"extras":1},
-                                                date_format    : "mmmm d, yyyy",
-                                                final_step_url : "",
-                                                intlTelInput   : {"enabled":1,"utils":"http:\/\/demo.kallyas.net\/vertigo-fitness-gym\/wp-content\/plugins\/bookly-responsive-appointment-booking-tool\/frontend\/resources\/js\/intlTelInput.utils.js","country":"auto"},
-                                                woocommerce    : {"enabled":0,"cart_url":""},
-                                                cart           : {"enabled":0},
-                                                is_rtl         : 0        });
-                                        });
-                                    </script>
-                                </div>
-                                </div>
-                            </div>
+            </div>
+        </section>
+        <section class="zn_section eluid1b0fab7e   zn_parallax  section-sidemargins    zn_section--relative section--no " id="eluidef1b928a">
+            <div class="kl-bg-source znParallax-background"><div class="kl-bg-source__parallaxWrapper zn-parallaxHack--center"><img class="kl-bg-source__bgimage ww cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/parallax-background.jpg"></div></div>
+            <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluida3671ddf      col-md-12 col-sm-12   znColumnElement" id="eluida3671ddf">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidb2381b9d  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 48px; color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Facts</span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidc3705b53      col-md-3 col-sm-6   znColumnElement" id="eluid9b39297a">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn-counterElm eluidae86685c text-center  zn-counterElm-fadeIn" data-zn-count='{"from":"0","to":"130","speed":"1000","refreshInterval":"3","decimals":"0"}' data-text-after="+">0</div><div class="zn_text_box eluid23522d83  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 18px;"><span style="color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Customers</span></span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidc6dbe107      col-md-3 col-sm-6   znColumnElement" id="eluid87cccec2">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn-counterElm eluid21fd12a4 text-center  zn-counterElm-fadeIn" data-zn-count='{"from":"0","to":"200","speed":"1000","refreshInterval":"3","decimals":"0"}' data-text-after="+">0</div><div class="zn_text_box eluida74c203a  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 18px;"><span style="color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Apps developed</span></span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidd80ce604      col-md-3 col-sm-6   znColumnElement" id="eluidd80ce604">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn-counterElm eluid6793cd33 text-center  zn-counterElm-fadeIn" data-zn-count='{"from":"0","to":"10","speed":"1000","refreshInterval":"5","decimals":"0"}' data-text-after="+">0</div><div class="zn_text_box eluid3d1464f9  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 18px;"><span style="color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Offices</span></span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid1cf83db4      col-md-3 col-sm-6   znColumnElement" id="eluid1cf83db4">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn-counterElm eluid95f5eca2 text-center  zn-counterElm-fadeIn" data-zn-count='{"from":"1","to":"2","speed":"1000","refreshInterval":"5","decimals":"0"}' data-text-after="K+">1</div><div class="zn_text_box eluidd60190f8  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 18px;"><span style="color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Coffes</span></span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid98421015      col-md-12 col-sm-12   znColumnElement" id="eluid98421015">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid0777036d  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 24px;"><span style="color: #999999;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">We craft beautifully useful marketing and digital products that grow businesses. </span></span></span></span></h6>
+                            </div> </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <footer-component></footer-component>
-        </div>
+            </div>
+        </section>
+        <section class="zn_section eluiddcca14fd     section-sidemargins    section--no " id="eluiddcca14fd">
+            <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
+                <div class="row ">
+                    <div class="eluid98a3bdb8      col-md-12 col-sm-12   znColumnElement" id="eluid98a3bdb8">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidc746a1a1  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 30px; color: #222222;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Working with world's best companies.</span></span></span></h6>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid397f6fc5      col-md-2 col-sm-2   znColumnElement" id="eluid397f6fc5">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid0b4e4498 "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/logo-horse.png" alt="" title="logo-horse.png"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidef48ab80      col-md-3 col-sm-3   znColumnElement" id="eluidef48ab80">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid5b7775ef "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/logo-crown.png" alt="" title="logo-crown.png"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidb2630f97      col-md-2 col-sm-2   znColumnElement" id="eluidb2630f97">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidfdab26a0 "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/logo-cupcake.png" alt="" title="logo-cupcake.png"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid12412413      col-md-3 col-sm-3   znColumnElement" id="eluid12412413">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidae2bbdf2 "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/logo-frank.png" alt="" title="logo-frank.png"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid76d59fa2      col-md-2 col-sm-2   znColumnElement" id="eluid76d59fa2">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid5a623404 "><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/logo-ship.png" alt="" title="logo-ship.png"/></div></div></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid23c0d4e4      col-md-12 col-sm-12   znColumnElement" id="eluid23c0d4e4">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="znSmartCarousel eluid09482e9d  znSmartCarousel-hasPreloader znSmartCarouselMode--view element-scheme--light"><div class="znSmartCarousel-loadingContainer"><div class="znSmartCarousel-holder js-slick " data-slick='{"infinite":true,"slidesToShow":1,"slidesToScroll":1,"autoplay":true,"autoplaySpeed":6000,"easing":"linear","speed":500,"swipe":true,"touchMove":true,"adaptiveHeight":true,"loadingContainer":".eluid09482e9d","fade":true,"arrows":true,"appendArrows":".eluid09482e9d .znSmartCarousel-nav","prevArrow":".eluid09482e9d .znSmartCarousel-prev","nextArrow":".eluid09482e9d .znSmartCarousel-next"}'><div class="znSmartCarousel-item znSmartCarousel-item--1 " id="eluid09482e9d_0"><div class="row znSmartCarousel-container ">
+                                <div class="eluid39a82e15      col-md-12 col-sm-12   znColumnElement" id="eluid39a82e15">
+                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                        <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid176bff1a  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100;">“A river cuts through rock, not because of its power, </span></h6>
+                                            <h6 style="text-align: center;"><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100;">but because of its persistence.”</span></h6>
+                                        </div><div class="zn_text_box eluid07c4466e  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 16px; color: #333333;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 500;">James N. Watkins</span></span></span></h6>
+                                        </div><div class="zn_text_box eluid454ae01e  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 16px; color: #333333;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Author.</span></span></span></h6>
+                                        </div> </div>
+                                    </div>
+                                </div>
+                            </div></div><div class="znSmartCarousel-item znSmartCarousel-item--2 " id="eluid09482e9d_1"><div class="row znSmartCarousel-container ">
+                                <div class="eluidd6aa16ec      col-md-12 col-sm-12   znColumnElement" id="eluidd6aa16ec">
+                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                        <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidf6010d4a  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100;">“It is not the mountain we conquer but ourselves.”</span></h6>
+                                        </div><div class="zn_text_box eluid477319e2  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 16px; color: #333333;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 500;">Edmund Hillary</span></span></span></h6>
+                                        </div><div class="zn_text_box eluid150726a8  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 16px; color: #333333;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Explorer</span></span></span></h6>
+                                        </div> </div>
+                                    </div>
+                                </div>
+                            </div></div></div><div class="znSmartCarousel-nav znSmartCarousel-navPosition--bottom-center znSmartCarousel-navStyle--default"><span class="znSmartCarousel-arr znSmartCarousel-prev "><svg viewBox="0 0 256 256"><polyline fill="none" stroke="black" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" points="184,16 72,128 184,240"/></svg></span><span class="znSmartCarousel-arr znSmartCarousel-next"><svg viewBox="0 0 256 256"><polyline fill="none" stroke="black" stroke-width="16" stroke-linejoin="round" stroke-linecap="round" points="72,16 184,128 72,240"/></svg></span></div><div class="clearfix"></div></div><div class="znSmartCarousel-loading"></div>
+                                <div class="clearfix"></div>
+                            </div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="zn_section eluid1d7f6d54   zn_parallax  section-sidemargins    zn_section--relative section--no " id="eluid1d7f6d54">
+            <div class="kl-bg-source znParallax-background"><div class="kl-bg-source__parallaxWrapper zn-parallaxHack--center"><img class="kl-bg-source__bgimage ww cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/people.jpg"></div><div class="kl-bg-source__overlay " style="background-color:rgba(0,0,0,0.65)"></div></div>
+            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row ">
+                    <div class="eluida7a5b13b      col-md-12 col-sm-12   znColumnElement" id="eluida7a5b13b">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid46865f60  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-size: 30px; color: #ffffff;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Get in Touch With Us.</span></span></span></h6>
+                            </div><div class="zn_text_box eluid3e7a2e98  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100; color: #ffffff;">Whether you’re interested in working with us or for us, we’re always happy to chat. </span></h6>
+                                <h6 style="text-align: center;"><strong><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100; color: #ffffff;">For Inquiries: </span></strong><span style="font-family: georgia; color: #c89d28;"><span style="font-size: 22px; font-weight: 100;">(500) 123-0800</span></span><strong><span style="font-family: Ubuntu; font-size: 22px; font-weight: 100; color: #ffffff;">.</span></strong></h6>
+                            </div><div class="zn_buttons_element eluid41c8d347 text-center "><a href="#" id="eluid41c8d3470" class="eluid41c8d3470 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>DROP US A LINE</span></a></div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-
-    <a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
+    <div class="znpb-footer-smart-area">
+        <section class="zn_section eluid29466e3b     section-sidemargins    section--no " id="eluid91eee2aa">
+            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row ">
+                    <div class="eluid53597d7e      col-md-6 col-sm-6   znColumnElement" id="eluidae20d071">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid5387a540  zn_text_box-light element-scheme--light"><p><span style="font-size:18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">HOGASH STUDIOS</span></span></p>
+                            </div><div class="zn_text_box eluid46cf6434  zn_text_box-light element-scheme--light"><p><span style="color: #666666;">We're a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</span></p>
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid61a78ba9      col-md-2 col-sm-2   znColumnElement" id="eluid61a78ba9">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid44e9db22  zn_text_box-light element-scheme--light"><p><span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">COMPANY</span></span></p>
+                            </div><div class="elm-custommenu clearfix eluid5a1ecfc6  text-left elm-custommenu--normal"><ul id="eluid5a1ecfc6" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="#"><span>Our Blog</span></a></li>
+                                <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="#"><span>Instagram</span></a></li>
+                                <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="#"><span>Snapchat</span></a></li>
+                                <li id="menu-item-74" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="#"><span>Facebook</span></a></li>
+                                <li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="#"><span>Twitter</span></a></li>
+                                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="#"><span>Dribbble</span></a></li>
+                            </ul></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluidaff11a7a      col-md-2 col-sm-2   znColumnElement" id="eluidaff11a7a">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidf703b47e  zn_text_box-light element-scheme--light"><p><font color="#ffffff" face="Ubuntu"><span style="font-size: 18px;">MEMBER</span></font></p>
+                            </div><div class="elm-custommenu clearfix eluid9b0d93f8  text-left elm-custommenu--normal"><ul id="eluid9b0d93f8" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a href="#"><span>Home</span></a></li>
+                                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a href="#"><span>About</span></a></li>
+                                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="#"><span>Pricing</span></a></li>
+                                <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="#"><span>Blog</span></a></li>
+                                <li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="#"><span>Services</span></a></li>
+                                <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82"><a href="#"><span>Shop</span></a></li>
+                            </ul></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid47f629f7      col-md-2 col-sm-2   znColumnElement" id="eluid47f629f7">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid772158f4  zn_text_box-light element-scheme--light"><p><span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">FOLLOW</span></span></p>
+                            </div><div class="elm-custommenu clearfix eluid831a7f02  text-left elm-custommenu--normal"><ul id="eluid831a7f02" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="#"><span>Account</span></a></li>
+                                <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="#"><span>Billing</span></a></li>
+                                <li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="#"><span>Membership</span></a></li>
+                                <li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#"><span>Receipt</span></a></li>
+                                <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="#"><span>Invoice</span></a></li>
+                            </ul></div> </div>
+                        </div>
+                    </div>
+                    <div class="eluid81d5d623      col-md-12 col-sm-12   znColumnElement" id="eluid81d5d623">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_separator clearfix eluidaf98269d zn_separator--icon-no "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eluidc1e37d92      col-md-12 col-sm-12   znColumnElement" id="eluidc1e37d92">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid38790a71  zn_text_box-light element-scheme--light"><p><span style="letter-spacing: 2px;"><span style="font-size: 11px;"><span style="font-family: Ubuntu;"><span style="color: #999999; text-transform: uppercase;">© 2017 <span style="color: #8d7431;"><a style="color: #8d7431;" href="http://kallyas.net" target="">Kallyas</a></span> | All rights reserved</span> <a href="http://hogash.com"><span style="color: #8d7431; text-transform: uppercase;">hogash</span></a></span></span></span>.</p>
+                            </div><div class="zn_text_box eluid4c651b61  zn_text_box-light element-scheme--light"><p><span style="letter-spacing: 2px; font-size: 10px;"><span style="font-family: Ubuntu;"><span style="color: #666;">Theme Powered by </span><a href="http://wordpress.org"><span style="color: #999;">WordPress</span></a></span></span></p>
+                            </div> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
