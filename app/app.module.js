@@ -6,6 +6,8 @@ angular.module('sportApp', [
   'core',
   'indexPage',
   'aboutPage',
-  'movieDetails',
+  'admin',
+  'adminAdd',
+  'login',
   'uiGmapgoogle-maps'
 ]);

@@ -1,0 +1,39 @@
+
+<uib-tabset type="pills" active="activeMainTabs">
+    <uib-tab>
+        <uib-tab-heading ng-click="toogleTabs(0)">
+            show courts!
+        </uib-tab-heading>
+        <uib-tabset active="activeTab">
+            корты
+            <uib-tab index="$index" ng-repeat="court in courts" heading="Court {{$index + 1}}">
+                <input type="text" placeholder="Name" ng-model="court.name" required>
+                <input type="text" placeholder="Descr" ng-model="court.descr">
+            </uib-tab>
+
+        </uib-tabset>
+        <button ng-click="addMoreCourt()">Add one court</button>
+    </uib-tab>
+
+
+    <uib-tab>
+        <uib-tab-heading ng-click="toogleTabs(1)">
+            Show clubs!
+        </uib-tab-heading>
+        <uib-tabset active="activeTab">
+            клубы
+            <uib-tab index="$index" ng-repeat="court in courts" heading="Court {{$index + 1}}">
+                <input type="text" placeholder="Name" ng-model="court.name" required>
+                <input type="text" placeholder="Descr" ng-model="court.descr">
+            </uib-tab>
+
+        </uib-tabset>
+        <button ng-click="addMoreCourt()">Add one court</button>
+    </uib-tab>
+</uib-tabset>
+
+
+
+
+
+

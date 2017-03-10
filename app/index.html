@@ -43,43 +43,45 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-
+      <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
     <script src="bower_components/angular/angular.js"></script>
+
+  <script src="http://rawgit.com/nmccready/angular-simple-logger/master/dist/angular-simple-logger.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.2.1/angular-google-maps.min.js"></script>
 
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-
-    <script type="text/javascript" src="bower_components/angular-ui-event/dist/event.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular-ui-map/ui-map.js"></script>
-
+    <script src="bower_components/angular-ui-bootstrap/dist/ui-bootstrap-tpls-2.5.0.min.js"></script>
 
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
     <script src="core/core.module.js"></script>
     <script src="core/movie/movie.module.js"></script>
     <script src="core/movie/movie.service.js"></script>
-    <script src="index-page/index-page.module.js"></script>
-    <script src="index-page/index-page.component.js"></script>
-    <script src="about-page/about-page.module.js"></script>
-    <script src="about-page/about-page.component.js"></script>
-    <script src="header/header.module.js"></script>
-    <script src="header/header.component.js"></script>
-    <script src="ui-map/ui-map.module.js"></script>
-    <script src="ui-map/ui-map.component.js"></script>
-    <script src="footer/footer.module.js"></script>
-    <script src="footer/footer.component.js"></script>
+    <script src="components/index-page/index-page.module.js"></script>
+    <script src="components/index-page/index-page.component.js"></script>
+    <script src="components/about-page/about-page.module.js"></script>
+    <script src="components/about-page/about-page.component.js"></script>
+    <script src="components/header/header.module.js"></script>
+    <script src="components/header/header.component.js"></script>
+    <script src="components/footer/footer.module.js"></script>
+    <script src="components/footer/footer.component.js"></script>
 
-    <script src="movie-details/movie-details.module.js"></script>
-    <script src="movie-details/movie-details.component.js"></script>
-    <script src="paginator/paginator.module.js"></script>
-    <script src="paginator/paginator.component.js"></script>
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+      <script src="components/login/login.module.js"></script>
+      <script src="components/login/login.component.js"></script>
 
+    <script src="components/admin/admin.module.js"></script>
+    <script src="components/admin/admin.component.js"></script>
+    <script src="components/admin-add/admin-add.module.js"></script>
+    <script src="components/admin-add/admin-add.component.js"></script>
 
   </head>
   <body class="home page-template-default page page-id-92 ecwd-theme-parent-kallyas ecwd-theme-child-kallyas-child res1170 kl-skin--light ecwd-kallyas" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-
-  <div ui-view></div>
+  <div id="page_wrapper">
+      <!--<header-component></header-component>-->
+      <div ui-view></div>
+  </div>
 
   <script type='text/javascript' src='js/ecwd_popup.js'></script>
   <script type='text/javascript' src='js/core.min.js'></script>

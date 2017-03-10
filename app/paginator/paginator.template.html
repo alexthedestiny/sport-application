@@ -1,5 +1,0 @@
-<ul ng-if="$ctrl.query != null" ng-click="$ctrl.clickOnPage($event)">
-    <li style="list-style-type: none; display: inline-block;" ng-repeat="n in $ctrl.range() track by $index">
-        <a ng-class="{active: n == $ctrl.current_page}" data-number="{{n}}" href="">{{n}}</a>
-    </li>
-</ul>

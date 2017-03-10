@@ -2,7 +2,7 @@
 
     <header-component></header-component>
 
-    <div class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
+    <marker class="zn_pb_wrapper clearfix zn_sortable_content" data-droplevel="0">
         <div class="kl-slideshow 0 kl-revolution-slider portfolio_devices eluiddc871616  ">
         <div class="bgback"></div>
         <link href="http://fonts.googleapis.com/css?family=Poppins%3A700%2C600" rel="stylesheet" property="stylesheet" type="text/css" media="all"/>
@@ -208,7 +208,36 @@
         <div class="zn_header_bottom_style"></div>
         </div>
 
-        <ui-map-module></ui-map-module>
+
+        <ui-gmap-google-map
+                center='map.center'
+                zoom='map.zoom'
+                events='{
+                    click: map.onClick
+                }'
+                refresh='true'
+        >
+
+            <ui-gmap-marker
+                    ng-repeat="m in markers"
+                    ng-click="map.refresh()"
+                    coords='m'
+                    idkey='m.id'
+                    events="m.events"
+                    options="m.opts"
+           >
+                <ui-gmap-marker coords="map.waterfall" idkey="1" options="map.waterfall.opts"
+                                events="map.waterfall.events"></ui-gmap-marker>
+                <ui-gmap-window show="m.showWindow" closeClick="'closeClick'" ng-cloak>
+                    <div>
+                        <p>This is an info window at {{ m.latitude | number:4 }}, {{ m.longitude | number:4 }}!</p>
+                        <p class="muted">My marker will stay open when the window is popped up!</p>
+                    </div>
+                </ui-gmap-window>
+            </ui-gmap-marker>
+
+        </ui-gmap-google-map>
+
 
 
         <section class="zn_section eluidddf4d221     section-sidemargins    zn_section--relative section--no " id="eluidddf4d221">
@@ -555,6 +584,3 @@
     </div>
 
     <a href="#" id="totop" class="u-trans-all-2s js-scroll-event" data-forch="300" data-visibleclass="on--totop">TOP</a>
-
-
-
