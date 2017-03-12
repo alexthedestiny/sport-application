@@ -84,10 +84,10 @@
                                 </div>
                                 <div class="zn_buttons_element eluid7b7492a1 text-left ">
                                     <a href="#eluidef1b928a" id="eluid7b7492a10" class="eluid7b7492a10 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" data-target="smoothscroll" itemprop="url">
-                                        <span>Download iOS app</span>
+                                        <span><i class="ion-social-android"></i> Download iOS app</span>
                                     </a>
                                     <a href="#eluidef1b928a" id="eluid7b7492a10" class="eluid7b7492a10 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" data-target="smoothscroll" itemprop="url">
-                                        <span>Download Android app</span>
+                                        <span><i class="ion-social-android"></i> Download Android app</span>
                                     </a>
                                 </div>
                             </div>
@@ -97,125 +97,107 @@
             </div>
         </section>
 
-        <section class="zn_section eluid75ca258f     section-sidemargins    zn_section--relative section--no " id="eluid75ca258f1">
+        <section class="container" style="margin-top: 50px;">
             <div class="row">
-            <div class="col-md-6">
-                <section class="zn_section eluid69fdcb98     section-sidemargins    section--no " id="eluid69fdcb98">
-                    <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                        <div class="row ">
-                            <div class="eluid702b4fd0      col-md-6 col-sm-6   znColumnElement" id="eluid702b4fd0">
-                                <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                    <div class="znColumnElement-innerContent">
+                <div class="col-md-4">
+                    <form name="outerForm" class="tab-form-demo">
+                        <uib-tabset active="activeForm">
+                            <uib-tab index="0" ng-click="$ctrl.id_active_cat = null;" heading="Все">
+                                <h3 class="" style="color: #333333;">Поиск объектов</h3>
+                                <input type="text" class="form-control" placeholder="Введите название объекта" ng-model="$ctrl.firstTitle">
+                                <br>
 
+                                <select class="form-control"
+                                        ng-options="sub.title for sub in sub_cat"
+                                        ng-model="$ctrl.selectedSubCat">
+                                    <option value="">Не выбрано</option>
+                                </select>
+                                <br>
+                                <br>
+                                <p>{{$ctrl.selectedSubCat}}</p>
+                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
 
+                            </uib-tab>
+                            <uib-tab index="1" ng-click="$ctrl.id_active_cat = 1;" heading="Площадки">
+                                <h3 class="" style="color: #333333;">Поиск площадок</h3>
+                                <input type="text" class="form-control" placeholder="Введите название площадки" ng-model="$ctrl.firstTitle">
+                                <br>
 
-                                        <form name="outerForm" class="tab-form-demo">
-                                            <uib-tabset active="activeForm">
-                                                <uib-tab index="0" heading="Площадки">
-                                                    <div class="row tabPaneContainer ">
-                                                        <div class="eluid95e13459 col-sm-12 col-sm-12   znColumnElement" id="eluid95e13459">
-                                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                                <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidde404928  zn_text_box-light element-scheme--light">
-                                                                    <h3 class="zn_text_box-title zn_text_box-title-- ">Поиск площадок</h3>
-                                                                    <input type="text" class="form-control" placeholder="Text input">
-                                                                    <br>
+                                <select class="form-control"
+                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 1 }"
+                                        ng-model="$ctrl.selectedSubCat">
+                                    <option value="">Не выбрано</option>
+                                </select>
+                                <br>
+                                <br>
+                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
 
-                                                                    <select class="form-control">
-                                                                        <option>1</option>
-                                                                        <option>2</option>
-                                                                        <option>3</option>
-                                                                        <option>4</option>
-                                                                        <option>5</option>
-                                                                    </select>
-                                                                    <br>
-                                                                    <br>
-                                                                    <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-                                                                </div> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </uib-tab>
-                                                <uib-tab index="1" heading="Занятия">
-                                                    <div class="row tabPaneContainer ">
-                                                        <div class="eluid95e13459 col-sm-12 col-sm-12   znColumnElement" id="eluid95e13459">
-                                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                                <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidde404928  zn_text_box-light element-scheme--light">
-                                                                    <h3 class="zn_text_box-title zn_text_box-title-- ">Поиск площадок</h3>
-                                                                    <input type="text" class="form-control" placeholder="Text input">
-                                                                    <br>
+                            </uib-tab>
+                            <uib-tab index="2" ng-click="$ctrl.id_active_cat = 2;" heading="Занятия">
+                                <h3 class="" style="color: #333333;">Поиск занятий</h3>
+                                <input type="text" class="form-control" placeholder="Введите название занятия" ng-model="$ctrl.firstTitle">
+                                <br>
 
-                                                                    <select class="form-control">
-                                                                        <option>1</option>
-                                                                        <option>2</option>
-                                                                        <option>3</option>
-                                                                        <option>4</option>
-                                                                        <option>5</option>
-                                                                    </select>
-                                                                    <br>
-                                                                    <br>
-                                                                    <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-                                                                </div> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </uib-tab>
-                                                <uib-tab index="2" heading="Клубы">
-                                                    <div class="row tabPaneContainer ">
-                                                        <div class="eluid95e13459 col-sm-12 col-sm-12   znColumnElement" id="eluid95e13459">
-                                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                                <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidde404928  zn_text_box-light element-scheme--light">
-                                                                    <h3 class="zn_text_box-title zn_text_box-title-- ">Поиск площадок</h3>
-                                                                    <input type="text" class="form-control" placeholder="Text input">
-                                                                    <br>
+                                <select class="form-control"
+                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 2 }"
+                                        ng-model="$ctrl.selectedSubCat">
+                                    <option value="">Не выбрано</option>
+                                </select>
+                                <br>
+                                <br>
+                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
 
-                                                                    <select class="form-control">
-                                                                        <option>1</option>
-                                                                        <option>2</option>
-                                                                        <option>3</option>
-                                                                        <option>4</option>
-                                                                        <option>5</option>
-                                                                    </select>
-                                                                    <br>
-                                                                    <br>
-                                                                    <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-                                                                </div> </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </uib-tab>
-                                            </uib-tabset>
-                                        </form>
-                                    </div>
+                            </uib-tab>
+                            <uib-tab index="3" ng-click="$ctrl.id_active_cat = 3;" heading="Клубы">
+                                <h3 class="" style="color: #333333;">Поиск клубов</h3>
+                                <input type="text" class="form-control" placeholder="Введите название клуба" ng-model="$ctrl.firstTitle">
+                                <br>
+
+                                <select class="form-control"
+                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 3 }"
+                                        ng-model="$ctrl.selectedSubCat">
+                                    <option value="">Не выбрано</option>
+                                </select>
+                                <br>
+                                <br>
+                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
+
+                            </uib-tab>
+                        </uib-tabset>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <ui-gmap-google-map
+                        center='map.center'
+                        zoom='map.zoom'
+                        events='{
+                                click: map.onClick
+                            }'
+                        refresh='true'>
+
+                        <ui-gmap-marker
+                                ng-repeat="m in markers | sortByIdCat:$ctrl.id_active_cat | customSearchPlaces:$ctrl.firstTitle | filter:{id_cat:$ctrl.selectedSubCat.id_cat}"
+                                ng-click="map.refresh()"
+                                coords='m'
+                                idkey='m.id'
+                                events="m.events"
+                                options="m.opts">
+                            <!--<ui-gmap-marker coords="map.waterfall" idkey="1" options="map.waterfall.opts"
+                                            events="map.waterfall.events"></ui-gmap-marker>-->
+                            <ui-gmap-window show="m.showWindow" closeClick="'closeClick'" ng-cloak>
+                                <div>
+                                    <p>{{ m.description }}!</p>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                            </ui-gmap-window>
+                        </ui-gmap-marker>
+
+                    </ui-gmap-google-map>
+                </div>
             </div>
-            <div class="col-md-6">
-                <section class="zn_section eluid30a90db7     section-sidemargins    section--no " id="eluid30a90db7" style="padding-bottom: 0;">
-                    <div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
-                        <div class="row zn_columns_container zn_content " data-droplevel="1">
-                            <div class="eluida6050b54      col-md-12 col-sm-12   znColumnElement" id="eluida6050b54">
-                                <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                    <div class="znColumnElement-innerContent zn_sortable_content zn_content" data-droplevel="2">
-
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
         </section>
 
 
-
-
-        <section class="zn_section eluid0cfe4e3d     section-sidemargins    section--no " id="eluid0cfe4e3d">
+        <section class="zn_section eluid0cfe4e3d section-sidemargins section--no " id="eluid0cfe4e3d">
             <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
                 <div class="row ">
                     <div class="eluid30f7c115      col-md-12 col-sm-12   znColumnElement" id="eluid30f7c115">
@@ -225,7 +207,7 @@
                             </div> </div>
                         </div>
                     </div>
-                    <div class="eluidb6493ab6      col-md-4 col-sm-4   znColumnElement" id="eluidb6493ab6">
+                    <div class="eluidb6493ab6 col-md-4 col-sm-4 znColumnElement" id="eluidb6493ab6">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
                             <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid4719a19b   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/88Q8BYR282.jpg" alt="" title="thumbnail-1.jpg"/></div></a></div><div class="zn_text_box eluid2fcc973b  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Клубы</span></span></span></h6>
                             </div><div class="zn_text_box eluid2486384b  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Найдите клуб находящийся недалеко от Вас и запишитесь на занятия.</span></span></span></p>
