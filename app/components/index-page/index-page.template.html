@@ -1,3 +1,9 @@
+<link type="text/css" media="all" href="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/cache/autoptimize/6/css/autoptimize_a26c1d832e1cb0ecc68d4a6a7b91c1f5.css" rel="stylesheet"/>
+<link rel='stylesheet' id='60-layout.css-css' href='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/agency/wp-content/uploads/sites/25/kallyas-builder/cache/60-layout.css?ver=18c5fad0bd7a090e5582cbc4a64b115a' type='text/css' media='all'/>
+<link rel="stylesheet" media="all" href="https://dpsv5ztge0cf1.cloudfront.net/assets/application-v4-cc61f8090e23d5d0b01078f578c78ec9.css" data-turbolinks-track="true" />
+
+
+
 <div class="login_register_stuff">
     <div id="login_panel" class="loginbox-popup auth-popup mfp-hide">
         <div class="inner-container login-panel auth-popup-panel">
@@ -45,15 +51,7 @@
         </div>
     </div>
 </div>
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="page_wrapper">
 
     <header-component></header-component>
@@ -70,8 +68,28 @@
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
                             <div class="znColumnElement-innerContent">
                                 <div class="zn_text_box eluidf253c69d  zn_text_box-light element-scheme--light">
-                                <p><span style="line-height: 38px;"><span style="font-size: 74px; font-weight: 100;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Sport4Nation</span></span></span></span></p>
-                                <p><span style="line-height: 38px;"><span style="font-size: 64px; font-weight: 100;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Революция в спорте</span></span></span></span></p>
+                                <p>
+                                    <span style="line-height: 38px;">
+                                        <span style="font-size: 74px; font-weight: 100;">
+                                            <span>
+                                                <span style="font-family: Ubuntu; color: #d04389;">
+                                                    Sport4Nation
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </p>
+                                <p>
+                                    <span style="line-height: 38px;">
+                                        <span style="font-size: 54px; font-weight: 100;">
+                                            <span>
+                                                <span style="font-family: Ubuntu; color: #0fbfd5;">
+                                                    Революция в спорте
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </p>
                             </div>
                                 <div class="zn_text_box eluid828af266  zn_text_box-light element-scheme--light">
                                     <h6 style="text-align: left;">
@@ -84,7 +102,7 @@
                                 </div>
                                 <div class="zn_buttons_element eluid7b7492a1 text-left ">
                                     <a href="#eluidef1b928a" id="eluid7b7492a10" class="eluid7b7492a10 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" data-target="smoothscroll" itemprop="url">
-                                        <span><i class="ion-social-android"></i> Download iOS app</span>
+                                        <span><i class="ion-social-apple"></i> Download iOS app</span>
                                     </a>
                                     <a href="#eluidef1b928a" id="eluid7b7492a10" class="eluid7b7492a10 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" data-target="smoothscroll" itemprop="url">
                                         <span><i class="ion-social-android"></i> Download Android app</span>
@@ -97,139 +115,555 @@
             </div>
         </section>
 
-        <section class="container" style="margin-top: 50px;">
-            <div class="row">
-                <div class="col-md-4">
-                    <form name="outerForm" class="tab-form-demo">
-                        <uib-tabset active="activeForm">
-                            <uib-tab index="0" ng-click="$ctrl.id_active_cat = null;" heading="Все">
-                                <h3 class="" style="color: #333333;">Поиск объектов</h3>
-                                <input type="text" class="form-control" placeholder="Введите название объекта" ng-model="$ctrl.firstTitle">
-                                <br>
 
-                                <select class="form-control"
-                                        ng-options="sub.title for sub in sub_cat"
-                                        ng-model="$ctrl.selectedSubCat">
-                                    <option value="">Не выбрано</option>
-                                </select>
-                                <br>
-                                <br>
-                                <p>{{$ctrl.selectedSubCat}}</p>
-                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-
-                            </uib-tab>
-                            <uib-tab index="1" ng-click="$ctrl.id_active_cat = 1;" heading="Площадки">
-                                <h3 class="" style="color: #333333;">Поиск площадок</h3>
-                                <input type="text" class="form-control" placeholder="Введите название площадки" ng-model="$ctrl.firstTitle">
-                                <br>
-
-                                <select class="form-control"
-                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 1 }"
-                                        ng-model="$ctrl.selectedSubCat">
-                                    <option value="">Не выбрано</option>
-                                </select>
-                                <br>
-                                <br>
-                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-
-                            </uib-tab>
-                            <uib-tab index="2" ng-click="$ctrl.id_active_cat = 2;" heading="Занятия">
-                                <h3 class="" style="color: #333333;">Поиск занятий</h3>
-                                <input type="text" class="form-control" placeholder="Введите название занятия" ng-model="$ctrl.firstTitle">
-                                <br>
-
-                                <select class="form-control"
-                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 2 }"
-                                        ng-model="$ctrl.selectedSubCat">
-                                    <option value="">Не выбрано</option>
-                                </select>
-                                <br>
-                                <br>
-                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-
-                            </uib-tab>
-                            <uib-tab index="3" ng-click="$ctrl.id_active_cat = 3;" heading="Клубы">
-                                <h3 class="" style="color: #333333;">Поиск клубов</h3>
-                                <input type="text" class="form-control" placeholder="Введите название клуба" ng-model="$ctrl.firstTitle">
-                                <br>
-
-                                <select class="form-control"
-                                        ng-options="sub.title for sub in sub_cat | filter:{ id_cat : 3 }"
-                                        ng-model="$ctrl.selectedSubCat">
-                                    <option value="">Не выбрано</option>
-                                </select>
-                                <br>
-                                <br>
-                                <a href="#" id="eluid31761fa22" class="eluid31761fa22 btn-element btn-element-2 btn  btn-default    btn-icon--before btn--rounded" title="SOME TITLE" target="_self" itemprop="url"><span>Поиск</span></a>
-
-                            </uib-tab>
-                        </uib-tabset>
-                    </form>
-                </div>
-                <div class="col-md-8">
-                    <ui-gmap-google-map
-                        center='map.center'
-                        zoom='map.zoom'
-                        events='{
-                                click: map.onClick
-                            }'
-                        refresh='true'>
-
-                        <ui-gmap-marker
-                                ng-repeat="m in markers | sortByIdCat:$ctrl.id_active_cat | customSearchPlaces:$ctrl.firstTitle | filter:{id_cat:$ctrl.selectedSubCat.id_cat}"
-                                ng-click="map.refresh()"
-                                coords='m'
-                                idkey='m.id'
-                                events="m.events"
-                                options="m.opts">
-                            <!--<ui-gmap-marker coords="map.waterfall" idkey="1" options="map.waterfall.opts"
-                                            events="map.waterfall.events"></ui-gmap-marker>-->
-                            <ui-gmap-window show="m.showWindow" closeClick="'closeClick'" ng-cloak>
-                                <div>
-                                    <p>{{ m.description }}!</p>
+        <section class="zn_section eluid8d07d239      u-zindex-1   zn_section--masked zn_section--relative section--no " style="padding-top: 0; padding-bottom: 0;" id="eluid8d07d239">
+            <div class="zn_section_size container custom_width zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row ">
+                    <div class="eluid4f090f90      col-md-12 col-sm-12   znColumnElement" id="eluid4f090f90">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="media-container eluid567fdb28  media-container--type-pb kl-overlay-none  ">
+                                <div class="kl-bg-source "><div class="kl-bg-source__overlay ov-eluid567fdb28" style="background: radial-gradient(circle at 1.98% 13.04%, #00BCD4, transparent 100%),radial-gradient(circle at 98.02% 28.95%, #DD2476, transparent 100%),radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%)"></div></div><div class="media-container-pb media-container-pb--alg-top"><div class="row zn_col_container-media_container ">
+                                <div class="eluid1fd0ecf7      col-md-4 col-sm-12   znColumnElement" id="eluid1fd0ecf7">
+                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                        <div class="znColumnElement-innerContent"> <div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid02a25915 "><h2 class="tbk__title" itemprop="headline">кто мы</h2><h3 class="tbk__subtitle" itemprop="alternativeHeadline">SPOR4NATION</h3></div> </div>
+                                    </div>
                                 </div>
-                            </ui-gmap-window>
-                        </ui-gmap-marker>
-
-                    </ui-gmap-google-map>
+                                <div class="eluid579464ad      col-md-8 col-sm-12   znColumnElement" id="eluid579464ad">
+                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
+                                        <div class="znColumnElement-innerContent">
+                                            <div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluid15864e86 ">
+                                                <p class="tbk__subtitle" itemprop="alternativeHeadline">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="kl-mask kl-bottommask kl-mask--mask7 mask7l kl-mask--light">
+                <div class="skewmask-block" style="background-color:#ffffff"></div></div>
         </section>
 
+        <google-map></google-map>
 
-        <section class="zn_section eluid0cfe4e3d section-sidemargins section--no " id="eluid0cfe4e3d">
-            <div class="zn_section_size container zn-section-height--custom_height zn-section-content_algn--middle ">
+
+
+
+
+        <section class="zn_section eluid0cfe4e3d section-sidemargins section--no " style="padding-top: 120px; background-color: #f9f9f9; padding-bottom: 0 !important;" id="eluid0cfe4e3d" >
+
+            <div class="container u-no-pad-mobile c-activity-cards__container">
+
+                <div class="c-activity-cards">
+                    <div class="c-activity-cards__header u-flex-container u-flex-container--align-center list-unstyled">
+                        <div class="c-activity-cards__header-icon">
+                            <svg width="25" height="32" viewBox="0 0 25 32" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(-8 -4.657)" fill="none" fill-rule="evenodd">
+                                    <circle cx="20" cy="20" r="20"></circle>
+                                    <path d="M17.986 14.02h4.5v-.036c2.053 0 4.14 1.35 4.404 2.833.264 1.482 1.153 3.805 1.89 5.333.866 1.79 2.744 2.694 2.744 2.694s1.11.404.556 1.68c-.556 1.277-1.77.632-1.77.632s-3.097-.725-4.446-4.124l-1.25-2.465v5.346l4.69 1.875c.545.14.97.556 1.19 1.11.345 1.055-.174 1.933-1.038 2.284L15.56 35.958s-1.47.493-2.027-.956c-.558-1.448.752-2.11.752-2.11l.834-.3-4.163-1.41c-.864-.35-1.383-1.405-1.037-2.283.226-.577.75-1 1.327-1.127l4.724-1.86V20.34l-1.364 2.692c-1.348 3.4-4.444 4.124-4.444 4.124s-1.216.645-1.77-.632c-.557-1.276.554-1.68.554-1.68s1.88-.905 2.743-2.694c.738-1.528 1.627-3.85 1.89-5.333.264-1.482 2.352-2.833 4.406-2.833v.035zm2.2-1.98c2.027 0 3.668-1.642 3.668-3.667s-1.64-3.667-3.667-3.667c-2.025 0-3.666 1.642-3.666 3.667s1.642 3.666 3.667 3.666zm-3.06 15.905l3.173 1.506 2.707-1.764-3.038.69-2.845-.43z" fill="#9212F8"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="c-activity-cards__header-title">StudioFit</h4>
+                            <span class="c-activity-cards__header-body">I want to join fitness classes and group workouts</span>
+                        </div>
+                        <div class="u-flex-item--pull-right c-activity-cards__header-action-top">
+                            <a class="c-activity-cards__header-action" href="https://access.kfit.com/schedules?city=kuala-lumpur&amp;t=studiofit"><span>
+                                View all 1998 activities
+                            </span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <ul class="c-activity-cards__list list-unstyled">
+
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1664455?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/0aaf85aa0cfef20ef3a1689e4a042158aba26d98/store/fill/800/400/6eaa6368645ff0413d8fd50f6cf52b14d9672c9d7a35e714c50491f90c4a/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Ashtanga -  Level 1</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 7:15pm -  8:15pm</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Yoga Hive</span>
+                                        <span class="c-activity-card__body-location">TTDI, TTDI</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM22</span>
+                                            <span class="c-activity-card__body-meta-price-original">RM30</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(1016)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1650340?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/5aa8b97a0ebab3736ae0aaa10e301896d3ebc963/store/fill/800/400/04a4515c89b3f0e3106e82288608168453a4fbd785a24db1321aff803a6e/file.jpg')">
+
+                                </div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Yoga</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 8:45am -  9:45am</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Hing Yoga and Dance</span>
+                                        <span class="c-activity-card__body-location">Taman Bukit Serdang, Seri Kembangan</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM19</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(173)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1650307?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/b9d3d5f9baac7e4db216c23e9351a97b17485da2/store/fill/800/400/121bb6377cbda57828f36a27363dea0097b876a6dccea96b5421608f8ba4/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Flow Yoga</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 9:00am - 10:00am</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Fysio Fitness</span>
+                                        <span class="c-activity-card__body-location">Bandar Mahkota Cheras, Cheras</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM19</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(289)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1650837?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/b5bfaf0f713332af78e69956c44dcc798e1d1c28/store/fill/800/400/1ce78d5d149975e8d98629bac4329a8968c30b5e44506367bad355e6710f/file.jpg')">
+
+                                </div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Hatha Yoga</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 9:15am - 10:15am</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Under The Light Yoga Studio</span>
+                                        <span class="c-activity-card__body-location">Publika, Mont Kiara</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM40</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(94)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-cards__header-action-bottom">
+                            <a class="c-activity-cards__header-action c-btn--block" href="https://access.kfit.com/schedules?t=studiofit">
+                                <span>View all 1998 activities</span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-activity-cards">
+                    <div class="c-activity-cards__header u-flex-container u-flex-container--align-center list-unstyled">
+                        <div class="c-activity-cards__header-icon">
+                            <svg width="32" height="18" viewBox="0 0 32 18" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(-4 -11)" fill="none" fill-rule="evenodd">
+                                    <circle cx="20" cy="20" r="20"></circle>
+                                    <path d="M10 12.77c0-.555.45-1.005.998-1.005h2.71c.55 0 .998.44.998 1.005v14.46c0 .555-.45 1.005-.998 1.005h-2.71c-.55 0-.998-.44-.998-1.005V12.77zm5.294 5.465h9.412v3.53h-9.412v-3.53zm18.235 0h1.176c.65 0 1.176.52 1.176 1.176v1.18c0 .65-.522 1.175-1.176 1.175H33.53v-3.53zM4.117 19.41c0-.65.522-1.175 1.176-1.175H6.47v3.53H5.295c-.65 0-1.176-.52-1.176-1.176v-1.18zm2.93-4.626c0-.368.306-.666.665-.666h1.014c.367 0 .665.29.665.666v10.432c0 .368-.306.666-.665.666H7.713c-.367 0-.665-.29-.665-.666V14.784zm18.246-2.014c0-.555.45-1.005.998-1.005h2.71c.55 0 .998.44.998 1.005v14.46c0 .555-.45 1.005-.998 1.005h-2.71c-.55 0-.998-.44-.998-1.005V12.77zm5.294 2.014c0-.368.29-.666.668-.666h1.017c.37 0 .668.29.668.666v10.432c0 .368-.287.666-.667.666h-1.017c-.37 0-.668-.29-.668-.666V14.784z" fill="#4A90E2"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="c-activity-cards__header-title">GymFit</h4>
+                            <span class="c-activity-cards__header-body">I want to work out at great gyms</span>
+                        </div>
+                        <div class="u-flex-item--pull-right c-activity-cards__header-action-top">
+                            <a class="c-activity-cards__header-action" href="https://access.kfit.com/schedules?city=kuala-lumpur&amp;t=gymfit">
+                                <span>View all 240 activities</span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="c-activity-cards__list list-unstyled">
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1649353?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/ac98899c830cf9c557c2afa358197180a6630d30/store/fill/800/400/89be02068590c9fd997cb387d799451d56d6a6a57b09acae1c73300196b6/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Gym Access</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time">12:00pm -  4:00pm</span>
+                                            <span class="c-activity-card__body-slots c-activity-card__body-slots--red">3 slots left</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Harimau Gym</span>
+                                        <span class="c-activity-card__body-location">Shah Alam, Shah Alam</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM9</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(16)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1651327?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/a71683d89f8a83888d8b81186b5b2585e05d1eb0/store/fill/800/400/06e186b78f337b1a422e4f932af2915f30c1933a1706963f6412e99da867/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">All Access Pass</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time">11:00am -  2:00pm</span>
+                                            <span class="c-activity-card__body-slots c-activity-card__body-slots--red">2 slots left</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">Xtreme Hardcore Gym &amp; Fitness</span>
+                                        <span class="c-activity-card__body-location">Wangsa Maju, Wangsa Maju</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM10</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(22)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1650598?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/35eec57c731522ab1abda1f1f93660bea9aba4a3/store/fill/800/400/e3b3b7aea85aa390ef1c3c47f59d85ef93f96eaf503f67eb6af201a97bea/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Gym Access</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time">11:00am -  2:00pm</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">OUG Gym</span>
+                                        <span class="c-activity-card__body-location">OUG, Sri Petaling</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1651359?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/94257ace1c9d5a65ffc309ddd08e96813fc39f55/store/fill/800/400/edbe99f750c39204646e3d7dd77cf1c6b9cb2db44bc7ad0c231c3542e851/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Gym Access</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time">10:00am - 12:00pm</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">TechnoFlex Fitness Club</span>
+                                        <span class="c-activity-card__body-location">Bukit Jalil, Bukit Jalil</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM13</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-cards__header-action-bottom">
+                            <a class="c-activity-cards__header-action c-btn--block" href="https://access.kfit.com/schedules?t=gymfit">
+                                <span>View all 240 activities</span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-activity-cards">
+                    <div class="c-activity-cards__header u-flex-container u-flex-container--align-center list-unstyled">
+                        <div class="c-activity-cards__header-icon">
+                            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="translate(-7 -7)" fill="none" fill-rule="evenodd">
+                                    <circle cx="20" cy="20" r="20"></circle>
+                                    <g fill="#B45A65">
+                                        <path d="M7.105 21.055c.224 2.76 1.317 5.28 3.006 7.28.833-2.8 2.298-5.58 4.184-8.13-.08-.043-.16-.083-.24-.12-2.127-.996-5.182-.553-6.95.97"></path>
+                                        <path d="M12.418 12.737l-1.812-1.624c-2.188 2.312-3.536 5.425-3.546 8.85 2.065-1.418 5.117-1.743 7.372-.687.142.067.277.138.408.213.723-.92 1.497-1.808 2.317-2.65-1.538-1.416-3.116-2.79-4.74-4.103M20.822 7.088c-1.07 1.914-1.172 4.726-.154 6.645 2.3-1.75 4.778-3.12 7.273-3.94-1.99-1.553-4.445-2.537-7.118-2.705M26.434 26.647c-2.67-3.25-5.56-6.33-8.632-9.212-.792.81-1.54 1.667-2.238 2.555 1.265 1.044 1.885 2.62 1.76 4.565.104 2.323 1.513 4.484 3.772 5.785 1.673.965 3.554 1.292 5.208.956.904-.507 1.74-1.118 2.496-1.82l-2.366-2.83M28.75 10.476c-2.602.766-5.202 2.165-7.598 3.994.702.876 1.873 1.645 3.814 1.515l.024-.002h.025c2.384.1 4.62 1.387 6.13 3.533.74 1.05 1.236 2.204 1.47 3.364.21-.927.326-1.89.326-2.88 0-3.764-1.615-7.157-4.19-9.524"></path><path d="M20.65 31.113c-2.533-1.46-4.11-3.906-4.22-6.544v-.05c.133-1.94-.563-3.112-1.407-3.82-1.948 2.63-3.437 5.516-4.208 8.407 2.347 2.366 5.597 3.834 9.185 3.834 1.443 0 2.83-.24 4.127-.678-1.178-.13-2.37-.51-3.477-1.15M30.417 20.03c-1.347-1.91-3.32-3.058-5.415-3.153-1.913.122-3.492-.532-4.55-1.856-.694.563-1.368 1.16-2.016 1.786 3.087 2.9 5.997 6 8.686 9.27l2.312 2.77c.975-1.04 1.78-2.24 2.37-3.554.26-1.71-.23-3.62-1.387-5.262M11.24 10.484l1.757 1.573c1.64 1.328 3.237 2.718 4.793 4.154.697-.675 1.422-1.317 2.168-1.92-.025-.045-.052-.088-.076-.133-1.098-2.067-1.072-4.942-.05-7.094-3.31.043-6.324 1.332-8.59 3.42"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="c-activity-cards__header-title">SportsFit</h4>
+                            <span class="c-activity-cards__header-body">I want to play more sports with my friends</span>
+                        </div>
+                        <div class="u-flex-item--pull-right c-activity-cards__header-action-top">
+                            <a class="c-activity-cards__header-action" href="https://access.kfit.com/schedules?city=kuala-lumpur&amp;t=sportsfit">
+                                <span>View all 278 activities</span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="c-activity-cards__list list-unstyled">
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1651630?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/2184d09617da5bd4dcbed8d63e711e036bbc66d4/store/fill/800/400/e0696b4d2d62039eac9ae9b4e26e5b0b820426b10c7c62d6af0057e66c2a/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Squash</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 9:00am - 10:00am</span>
+                                            <span class="c-activity-card__body-slots c-activity-card__body-slots--red">2 slots left</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">PJ Palms Sports Centre</span>
+                                        <span class="c-activity-card__body-location">Petaling Jaya, Petaling Jaya</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM32</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(405)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1650744?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/2184d09617da5bd4dcbed8d63e711e036bbc66d4/store/fill/800/400/e0696b4d2d62039eac9ae9b4e26e5b0b820426b10c7c62d6af0057e66c2a/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Swimming Pool (Mon-Fri)</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time">10:00am - 12:00pm</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">PJ Palms Sports Centre</span>
+                                        <span class="c-activity-card__body-location">Petaling Jaya, Petaling Jaya</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM6</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(405)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1676938?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/91de85c3cece1c353ca484c8e775b46094c8c6b8/store/fill/800/400/cbbaef303d94f6c5d7791816a08f7a6e616e1aa314e89402d41aa6c73d50/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Badminton – Court 3 (1 Hour)</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 9:00am - 10:00am</span>
+                                            <span class="c-activity-card__body-slots c-activity-card__body-slots--red">1 slot left</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">The Club@Bukit Utama (Badminton Court Hire)</span>
+                                        <span class="c-activity-card__body-location">Bandar Utama, Damansara Utama</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM9</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(45)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-card">
+                            <a class="c-activity-card__link" href="https://access.kfit.com/schedules/1651630?city=kuala-lumpur">
+                                <div class="c-activity-card__image" style="background-image: url('https://image-assets.access.kfit.com/attachments/2184d09617da5bd4dcbed8d63e711e036bbc66d4/store/fill/800/400/e0696b4d2d62039eac9ae9b4e26e5b0b820426b10c7c62d6af0057e66c2a/file.jpg')"></div>
+                                <div class="c-activity-card__body">
+                                    <h5 class="c-activity-card__body-title">Squash</h5>
+                                    <div class="u-flex-container u-flex-container--column">
+                                        <span class="c-activity-card__body-date">14 Mar 2017</span>
+                                        <div class="u-flex-container u-flex-container--align-baseline u-flex-container--wrap">
+                                            <span class="c-activity-card__body-time"> 9:00am - 10:00am</span>
+                                            <span class="c-activity-card__body-slots c-activity-card__body-slots--red">2 slots left</span>
+                                        </div>
+                                        <span class="c-activity-card__body-partner">PJ Palms Sports Centre</span>
+                                        <span class="c-activity-card__body-location">Petaling Jaya, Petaling Jaya</span>
+                                    </div>
+                                    <div class="c-activity-card__body-meta">
+                                        <div class="c-activity-card__body-meta-price">
+                                            <span class="c-activity-card__body-meta-price-discounted">RM32</span>
+                                        </div>
+                                        <div class="c-activity-card__body-meta-stars u-flex-item--pull-right hidden-xs">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star-half-o"></span>
+                                            <span class="c-activity-card__body-meta-rating-count">(405)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="c-activity-cards__header-action-bottom">
+                            <a class="c-activity-cards__header-action c-btn--block" href="https://access.kfit.com/schedules?t=sportsfit">
+                                <span>View all 278 activities</span>
+                                <svg width="14" height="11" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+                                        <path d="M8 9.663l4.47-4.47L8.117.844" stroke="#3A8CC7"></path>
+                                        <path d="M11.5 5.093h-10" stroke="#4990E2" stroke-linecap="square"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--<div class="zn_section_size container zn-section-height&#45;&#45;custom_height zn-section-content_algn&#45;&#45;middle ">
                 <div class="row ">
                     <div class="eluid30f7c115      col-md-12 col-sm-12   znColumnElement" id="eluid30f7c115">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid25b7987a  zn_text_box-light element-scheme--light"><h6 style="text-align: center;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">Все что связано со спортом в одном месте.</span></span></span></span></h6>
-                            </div><div class="zn_text_box eluid30f2a215  zn_text_box-light element-scheme--light"><p style="text-align: center;"><span style="font-size:16px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Мы первая в Украине спортивная социальная сеть. Выберите спортивный клуб, помещение или даже тренера используя всю мощь нашего сервиса </span></span></span></p>
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid25b7987a  zn_text_box-light element-scheme&#45;&#45;light"><h6 style="text-align: center;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">Все что связано со спортом - теперь в одном месте.</span></span></span></span></h6>
+                            </div><div class="zn_text_box eluid30f2a215  zn_text_box-light element-scheme&#45;&#45;light"><p style="text-align: center;"><span style="font-size:16px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Мы первая в Украине спортивная социальная сеть. Выберите спортивный клуб, помещение или даже тренера используя всю мощь нашего сервиса </span></span></span></p>
                             </div> </div>
                         </div>
                     </div>
                     <div class="eluidb6493ab6 col-md-4 col-sm-4 znColumnElement" id="eluidb6493ab6">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid4719a19b   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/88Q8BYR282.jpg" alt="" title="thumbnail-1.jpg"/></div></a></div><div class="zn_text_box eluid2fcc973b  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Клубы</span></span></span></h6>
-                            </div><div class="zn_text_box eluid2486384b  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Найдите клуб находящийся недалеко от Вас и запишитесь на занятия.</span></span></span></p>
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid4719a19b   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow&#45;&#45;hov-6 znBoxShadow&#45;&#45;hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/88Q8BYR282.jpg" alt="" title="thumbnail-1.jpg"/></div></a></div><div class="zn_text_box eluid2fcc973b  zn_text_box-light element-scheme&#45;&#45;light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Клубы</span></span></span></h6>
+                            </div><div class="zn_text_box eluid2486384b  zn_text_box-light element-scheme&#45;&#45;light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Найдите клуб находящийся недалеко от Вас и запишитесь на занятия.</span></span></span></p>
                             </div> </div>
                         </div>
                     </div>
                     <div class="eluid264be3dc      col-md-4 col-sm-4   znColumnElement" id="eluid264be3dc">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid54b6696f   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://static.everypixel.com/ep-pixabay/1468/2087/5137/14722/14682087513714722225-volleyball.jpg" alt="" title="thumbnail-2.jpg"/></div></a></div><div class="zn_text_box eluidf212c74a  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Спортивные помещения</span></span></span></h6>
-                            </div><div class="zn_text_box eluid2e8af500  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">На нашей платформе есть все виды спортивных помещений.</span></span></span></p>
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid54b6696f   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow&#45;&#45;hov-6 znBoxShadow&#45;&#45;hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://static.everypixel.com/ep-pixabay/1468/2087/5137/14722/14682087513714722225-volleyball.jpg" alt="" title="thumbnail-2.jpg"/></div></a></div><div class="zn_text_box eluidf212c74a  zn_text_box-light element-scheme&#45;&#45;light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Спортивные помещения</span></span></span></h6>
+                            </div><div class="zn_text_box eluid2e8af500  zn_text_box-light element-scheme&#45;&#45;light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">На нашей платформе есть все виды спортивных помещений.</span></span></span></p>
                             </div> </div>
                         </div>
                     </div>
                     <div class="eluid6641057b      col-md-4 col-sm-4   znColumnElement" id="eluid6641057b">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid0d5131f6   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow--hov-6 znBoxShadow--hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YM9JY14TSH.jpg" alt="" title="thumbnail-3.jpg"/></div></a></div><div class="zn_text_box eluid5b9abd6f  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Тренера</span></span></span></h6>
-                            </div><div class="zn_text_box eluidd0797a84  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Занимайся только с лучшими специалистами благодаря SPORT4NATION.</span></span></span></p>
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid0d5131f6   image-boxes-cover-fit-img"><a href="#" class="image-boxes-link imgboxes-wrapper u-mb-0 znBoxShadow&#45;&#45;hov-6 znBoxShadow&#45;&#45;hover" target="_self" itemprop="url"><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YM9JY14TSH.jpg" alt="" title="thumbnail-3.jpg"/></div></a></div><div class="zn_text_box eluid5b9abd6f  zn_text_box-light element-scheme&#45;&#45;light"><h6 style="text-align: left;"><span style="font-size: 22px; color: #000000;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;">Тренера</span></span></span></h6>
+                            </div><div class="zn_text_box eluidd0797a84  zn_text_box-light element-scheme&#45;&#45;light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Занимайся только с лучшими специалистами благодаря SPORT4NATION.</span></span></span></p>
                             </div> </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </section>
         <section class="zn_section eluid5bb4545c     section-sidemargins    zn_section--relative section--no " id="eluid5bb4545c">
             <div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
@@ -254,7 +688,15 @@
                     </div>
                     <div class="eluid64058639      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
-                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluid3f272c9a   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/TSUD9X5MFC.jpg" alt="" title="thumbnail-4.jpg"/></div></div></div> </div>
+                            <div class="znColumnElement-innerContent">
+                                <div class="box image-boxes imgbox-simple eluid3f272c9a   image-boxes-cover-fit-img" style="margin-bottom: 0px;">
+                                    <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                        <div class="image-boxes-img-wrapper img-align-center">
+                                            <img class="image-boxes-img img-responsive cover-fit-img" src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/TSUD9X5MFC.jpg" alt="" title="thumbnail-4.jpg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="eluida2eba02b      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
@@ -267,7 +709,15 @@
                     </div>
                     <div class="eluided7b32b8      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
-                            <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidda8d557c   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/HVSFS77XDN.jpg" alt="" title="thumbnail-5.jpg"/></div></div></div> </div>
+                            <div class="znColumnElement-innerContent">
+                                <div class="box image-boxes imgbox-simple eluidda8d557c   image-boxes-cover-fit-img" style="margin-bottom: 0px;">
+                                    <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                        <div class="image-boxes-img-wrapper img-align-center">
+                                            <img class="image-boxes-img img-responsive cover-fit-img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/HVSFS77XDN.jpg" alt="" title="thumbnail-5.jpg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="eluid5357c398      col-md-4 col-sm-4   znColumnElement" id="eluid055071be">
@@ -278,135 +728,371 @@
                                 </div> </div>
                         </div>
                     </div>
-                    <div class="eluid1af52d34      col-md-8 col-sm-8   znColumnElement" id="eluid055071be">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
-                            <div class="znColumnElement-innerContent">
-                                <div class="zn_custom_container eluid4412ba39  smart-cnt--default   clearfix">
+                    <div class="eluid1af52d34      col-md-8 col-sm-4   znColumnElement" id="eluid055071be">
+                        <!--<div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-center ">
+                            &lt;!&ndash;<div class="znColumnElement-innerContent">
+                                <div class="zn_custom_container eluid4412ba39  smart-cnt&#45;&#45;default   clearfix">
                                     <div class="row zn_col_container-smart_container gutter-0">
-                                        <div class="eluidd75bdb67      col-md-6 col-sm-6   znColumnElement" id="eluidd75bdb67">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
-                                                <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidc4c353be  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">Awards</span></span></span></span></h6>
-                                                </div> <div class="zn_separator clearfix eluid0fa43bbf zn_separator--icon-no "></div>
-                                                    <div class="zn_text_box eluid5538c481  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:13px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></span></p>
-                                                    </div> </div>
+                                        &lt;!&ndash;<div class="eluidd75bdb67      col-md-6 col-sm-6   znColumnElement" id="eluidd75bdb67">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-center znColumnElement-innerWrapper&#45;&#45;halign-center ">
+                                                <div class="znColumnElement-innerContent">
+                                                <div class="zn_text_box eluidc4c353be  zn_text_box-light element-scheme&#45;&#45;light">
+                                                <h6 style="text-align: left;">
+                                                <span style="line-height: 18px;">
+                                                <span style="font-family: Ubuntu; font-weight: 300;">
+                                                <span style="font-size: 30px;">
+                                                <span style="color: #000000;">Awards</span>
+                                                </span>
+                                                </span>
+                                                </span>
+                                                </h6>
+                                                </div>
+                                                <div class="zn_separator clearfix eluid0fa43bbf zn_separator&#45;&#45;icon-no "></div>
+                                                    <div class="zn_text_box eluid5538c481  zn_text_box-light element-scheme&#45;&#45;light">
+                                                        <p style="text-align: left;">
+                                                            <span style="font-size:13px;">
+                                                                <span style="color: #000000;">
+                                                                    <span style="font-family: Ubuntu;">
+                                                                        Add as many language packs as you want, to showcase your website across the entire globe.
+                                                                    </span>
+                                                                </span>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="eluid3160fc4d      col-md-6 col-sm-6   znColumnElement" id="eluid3160fc4d">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="box image-boxes imgbox-simple eluidb9c0ccfa   image-boxes-cover-fit-img"><div class="image-boxes-holder imgboxes-wrapper u-mb-0  "><div class="image-boxes-img-wrapper img-align-center"><img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/illustration2.png" alt="" title="illustration2.png"/></div></div></div> </div>
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                                                <div class="znColumnElement-innerContent">
+                                                    <div class="box image-boxes imgbox-simple eluidb9c0ccfa   image-boxes-cover-fit-img" style="margin-bottom: 0px;">
+                                                        <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
+                                                            <div class="image-boxes-img-wrapper img-align-center" style="height: 400px;">
+                                                                <img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/illustration2.png" alt="" title="illustration2.png"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div>&ndash;&gt;
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div>&ndash;&gt;
+                        </div>-->
                     </div>
                     <div class="eluid89e3c984      col-md-4 col-sm-4   znColumnElement" id="eluid89e3c984">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
-                            <div class="znColumnElement-innerContent"> <div class="media-container eluid25a18faa  media-container--type-pb kl-overlay-none  ">
-                                <div class="kl-bg-source "><div class="kl-bg-source__bgimage" style="background-image:url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/FN9W4V6TK5.jpg);background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div></div><div class="media-container-pb media-container-pb--alg-bottom"><div class="row zn_col_container-media_container ">
-                                <div class="eluid691ab98d      col-md-12 col-sm-12   znColumnElement" id="eluid691ab98d">
-                                    <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                        <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid076764c4  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px; color: #ffffff;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;">Goal</span></span></span></h6>
-                                        </div> <div class="zn_separator clearfix eluid99009b1a zn_separator--icon-no "></div>
-                                            <div class="zn_text_box eluid384e332e  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size: 13px; color: #cccccc;"><span style="font-family: Ubuntu;">Add as many language packs as you want, to showcase your website across the entire globe.</span></span></p>
-                                            </div> </div>
+                        <!--<div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-center znColumnElement-innerWrapper--halign-center ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="media-container eluid25a18faa  media-container--type-pb kl-overlay-none  ">
+                                    <div class="kl-bg-source ">
+                                        <div class="kl-bg-source__bgimage" style="background-image:url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/FN9W4V6TK5.jpg);background-repeat:no-repeat;background-attachment:scroll;background-position:center center;background-size:cover"></div>
+                                    </div>
+                                    <div class="media-container-pb media-container-pb--alg-bottom">
+                                        <div class="row zn_col_container-media_container ">
+                                            <div class="eluid691ab98d      col-md-12 col-sm-12   znColumnElement" id="eluid691ab98d">
+                                                <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                    <div class="znColumnElement-innerContent">
+                                                        <div class="zn_text_box eluid076764c4  zn_text_box-light element-scheme--light">
+                                                        <h6 style="text-align: left;">
+                                                            <span style="line-height: 18px; color: #ffffff;">
+                                                                <span style="font-family: Ubuntu; font-weight: 300;">
+                                                                    <span style="font-size: 30px;">Goal</span>
+                                                                </span>
+                                                            </span>
+                                                        </h6>
+                                                        </div>
+                                                        <div class="zn_separator clearfix eluid99009b1a zn_separator--icon-no "></div>
+                                                        <div class="zn_text_box eluid384e332e  zn_text_box-light element-scheme--light">
+                                                            <p style="text-align: left;">
+                                                                <span style="font-size: 13px; color: #cccccc;">
+                                                                    <span style="font-family: Ubuntu;">
+                                                                        Add as many language packs as you want, to showcase your website across the entire globe.
+                                                                    </span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div></div>
                             </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="zn_section eluidc813d8dd     section-sidemargins    section--no " id="eluidc813d8dd">
-            <div class="zn_section_size full_width zn-section-height--custom_height zn-section-content_algn--middle ">
-                <div class="row ">
-                    <div class="eluid3731a201      col-md-6 col-sm-10  col-lg-7 znColumnElement" id="eluid3731a201">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                        </div>-->
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left " style="background-color: #f4f0eb;    height: 400px;">
                             <div class="znColumnElement-innerContent">
-                                <div class="box image-boxes imgbox-simple eluid43e903e9 ">
+                                <div class="box image-boxes imgbox-simple eluidb9c0ccfa   image-boxes-cover-fit-img" style="margin-bottom: 0px;">
                                     <div class="image-boxes-holder imgboxes-wrapper u-mb-0  ">
                                         <div class="image-boxes-img-wrapper img-align-center">
-                                            <img class="image-boxes-img img-responsive " src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/device-b.jpg" alt="" title="device-b.jpg"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kl-iconbox eluid105c7ef1 playbutton  kl-iconbox--type-img   kl-iconbox--align-center text-center kl-iconbox--theme-light element-scheme--light">
-                                    <div class="kl-iconbox__inner clearfix">
-                                        <div class="kl-iconbox__icon-wrapper ">
-                                            <a href="https://www.youtube.com/watch?v=e452W2Kj-yg" class="kl-iconbox__link" data-lightbox="iframe" itemprop="url">
-                                                <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/play-button.png" width="122" height="122" alt="" title="play-button.png">
-                                            </a>
-                                        </div>
-                                        <div class="kl-iconbox__content-wrapper">
+                                            <img class="image-boxes-img img-responsive cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/illustration2.png" alt="" title="illustration2.png"/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="eluidc8ad75fe      col-md-6 col-sm-12  col-lg-5 znColumnElement" id="eluidc8ad75fe">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-center ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidb58718b8  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 42px;"><span style="font-size: 39px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="color: #000000;">Look like an expert right from the start.</span></span></span></span></h6>
-                            </div><div class="zn_text_box eluid94f61f9b  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 10px;"><span style="font-size: 24px; color: #333333;"><span style="font-family: Ubuntu; font-weight: 300;">Get all our proffesional themes.</span></span></span></h6>
-                            </div><div class="kl-iconbox eluida2ac62ba   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                <div class="kl-iconbox__inner clearfix">
-                                    <div class="kl-iconbox__icon-wrapper ">
-                                        <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon1.png" width="53" height="46" alt="" title="icon1.png"> </div>
-                                    <div class="kl-iconbox__content-wrapper">
-                                        <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                            <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Stunning Page Builder</h3>
-                                        </div>
-                                        <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                            <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="kl-iconbox eluid2e742bc6   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                    <div class="kl-iconbox__inner clearfix">
-                                        <div class="kl-iconbox__icon-wrapper ">
-                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon2.png" width="53" height="39" alt="" title="icon2.png"> </div>
-                                        <div class="kl-iconbox__content-wrapper">
-                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Iconic Awarded Design</h3>
-                                            </div>
-                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="kl-iconbox eluid6f295427   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                    <div class="kl-iconbox__inner clearfix">
-                                        <div class="kl-iconbox__icon-wrapper ">
-                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon6.png" width="45" height="50" alt="" title="icon6.png"> </div>
-                                        <div class="kl-iconbox__content-wrapper">
-                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">eCommerce Ready</h3>
-                                            </div>
-                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                <p class="kl-iconbox__desc">Intrinsicly formulate scalable web services before fully researched methodologies.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="zn_buttons_element eluid3c021ab6 text-left "><a href="http://demo.kallyas.net/membership/shop/" id="eluid3c021ab60" class="eluid3c021ab60 btn-element btn-element-0 btn  btn-fullcolor btn-custom-color btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url"><span>Зарегистрироваться</span></a></div> </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="zn_section eluid830190ea     section-sidemargins    section--no " id="eluid830190ea">
-            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--middle ">
+        <section class="zn_section eluide0379dfe     section-sidemargins    section--no " id="eluide0379dfe">
+            <div class="zn_section_size container custom_width zn-section-height--auto zn-section-content_algn--top ">
                 <div class="row ">
-                    <div class="eluid4564f3a3      col-md-12 col-sm-12   znColumnElement" id="eluid4564f3a3">
+                    <div class="eluid0e3bac39      col-md-12 col-sm-12   znColumnElement" id="eluid0e3bac39">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
                             <div class="znColumnElement-innerContent">
-                                <div class="zn_text_box eluidccecce91 zn_text_box-light element-scheme--light">
+                                <div class="zn_custom_container eluid889dfc25  wow no_animation smart-cnt--default   clearfix" style="margin-bottom: -45px;background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8ODE0WIMD9.jpg);">
+                                    <div class="row zn_col_container-smart_container ">
+                                        <div class="eluid2a7338aa      col-md-12 col-sm-12   znColumnElement" id="eluid2a7338aa">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent">
+                                                    <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidfe0cd812 ">
+
+                                                        <h2 class="tbk__subtitle" itemprop="alternativeHeadline">
+                                                            Посмотрите наше видео.
+                                                        </h2>
+                                                    </div>
+                                                    <div class="kl-iconbox eluid7a02398f   kl-iconbox--type-icon   kl-iconbox--align-center text-center kl-iconbox--theme-light element-scheme--light">
+                                                        <div class="kl-iconbox__inner clearfix">
+                                                            <div class="kl-iconbox__icon-wrapper ">
+                                                                <a href="" class="kl-iconbox__link" data-lightbox="iframe" itemprop="url">
+                                                                    <span class="kl-iconbox__icon kl-iconbox__icon--" data-zniconfam="icomoon" data-zn_icon=""></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="kl-iconbox__content-wrapper"></div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<link type="text/css" media="print" href="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/cache/autoptimize/6/css/autoptimize_a717378f455e729ceebdf7f344ca6d60.css" rel="stylesheet"/>-->
+
+        <section class="zn_section eluid9475b8d4     section-sidemargins    section--no " id="eluid9475b8d4">
+            <div class="zn_section_size full_width zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row gutter-0">
+                    <div class="eluid70368615      col-md-6 col-sm-6   znColumnElement" id="eluid70368615">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="zn_custom_container eluid7a240f3f  smart-cnt--default   clearfix" style=" height: 637px;background-image: url(http://static.everypixel.com/ep-pixabay/1523/5072/4558/14871/15235072455814871833-wallpaper.jpg);">
+                                    <div class="row zn_col_container-smart_container ">
+                                        <div class="eluidf42bbdf6  col-lg-offset-4 col-md-offset-4 col-sm-offset-4  col-md-4 col-sm-4   znColumnElement" id="eluidf42bbdf6">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent">
+                                                    <div class="stage-ibx eluid42ca740d  wow no_animation stage-ibx--points-full stage-ibx--src-ibx">
+                                                        <div class="stage-ibx__stage">
+                                                            <!--<img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/uploads/sites/6/2016/07/watch51.png" alt="" title="watch51.png" class="stage-ibx__stage-img img-responsive">-->
+                                                            <span style="top: 50px; left: 52px; opacity: 1;" class="stage-ibx__point" data-title="Lorem ipsum dolor" data-nr="1"></span>
+                                                            <span style="top: 194px; left: 317px; opacity: 1;" class="stage-ibx__point" data-title="Lorem ipsum dolor" data-nr="2"></span>
+                                                            <span style="top: 324px; left: 305px; opacity: 1;" class="stage-ibx__point" data-title="Lorem ipsum dolor" data-nr="3"></span>
+                                                            <span style="top: 418px; left: 142px; opacity: 1;" class="stage-ibx__point" data-title="Lorem ipsum dolor" data-nr="4"></span>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eluid06c87c36      col-md-6 col-sm-6   znColumnElement" id="eluid06c87c36">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="zn_custom_container eluida27a5d79  smart-cnt--default   clearfix" style="padding-top: 40px;">
+                                    <div class="row zn_col_container-smart_container ">
+                                        <div class="eluid750f064f  col-lg-offset-2 col-md-offset-2 col-sm-offset-2  col-md-6 col-sm-6   znColumnElement" id="eluid750f064f">
+                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                                                <div class="znColumnElement-innerContent">
+                                                    <div class="kl-title-block clearfix tbk--text- tbk--left text-left tbk-symbol--  tbk-icon-pos--after-title eluidd5985e68  fadeIn wow" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                                                        <h2 class="tbk__title" itemprop="headline">Преимущества</h2>
+                                                    </div>
+                                                    <div class="kl-iconbox eluidd9ed9206  fadeInRight wow  kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light" data-stageid="eluid42ca740d" data-pointx="52" data-pointy=" 50" data-pointtitle="Lorem ipsum dolor" data-point-number="1" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                                                    <div class="kl-iconbox__inner clearfix">
+                                                        <div class="kl-iconbox__icon-wrapper ">
+                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/uploads/sites/6/2016/06/icon1.png" alt="" title="icon1.png"> </div>
+                                                        <div class="kl-iconbox__content-wrapper">
+                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">1. Lorem ipsum dolor</h3>
+                                                            </div>
+                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                <p class="kl-iconbox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="kl-iconbox eluid415bfd3d  fadeInRight wow  kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light" data-stageid="eluid42ca740d" data-pointx="317" data-pointy=" 194" data-pointtitle="Visual Page Builder" data-point-number="2" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                                                        <div class="kl-iconbox__inner clearfix">
+                                                            <div class="kl-iconbox__icon-wrapper ">
+                                                                <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/uploads/sites/6/2016/06/icon2.png" alt="" title="icon2.png"> </div>
+                                                            <div class="kl-iconbox__content-wrapper">
+                                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                    <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">2. Lorem ipsum dolor</h3>
+                                                                </div>
+                                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                    <p class="kl-iconbox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="kl-iconbox eluidab7db332  fadeInRight wow  kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light" data-stageid="eluid42ca740d" data-pointx="305" data-pointy=" 324" data-pointtitle="150+ Page Builder Elements" data-point-number="3" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                                                        <div class="kl-iconbox__inner clearfix">
+                                                            <div class="kl-iconbox__icon-wrapper ">
+                                                                <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/uploads/sites/6/2016/06/icon4.png" alt="" title="icon4.png"> </div>
+                                                            <div class="kl-iconbox__content-wrapper">
+                                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                    <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">3. Lorem ipsum dolor</h3>
+                                                                </div>
+                                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                    <p class="kl-iconbox__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="kl-iconbox eluidc8d9fc28  fadeInRight wow  kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light" data-stageid="eluid42ca740d" data-pointx="142" data-pointy=" 418" data-pointtitle="4. Import / export designs" data-point-number="4" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInRight;">
+                                                        <div class="kl-iconbox__inner clearfix">
+                                                            <div class="kl-iconbox__icon-wrapper ">
+                                                                <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/kyma-app-landing-page/wp-content/uploads/sites/6/2016/06/icon5.png" alt="" title="icon5.png"> </div>
+                                                            <div class="kl-iconbox__content-wrapper">
+                                                                <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
+                                                                    <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">4. Lorem ipsum dolor</h3>
+                                                                </div>
+                                                                <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
+                                                                    <p class="kl-iconbox__desc" style="font-size: 14px !important;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="zn_section eluidd9fc66ab  prtf_hide-filters   section-sidemargins    zn_section--masked zn_section--relative section--skewed " id="eluidd9fc66ab">
+
+            <div class="kl-mask kl-bottommask kl-mask--mask7 mask7big mask7l kl-mask--light">
+                <div class="skewmask-block" style="background-color:#f8f8f8"></div>
+            </div>
+        </section>
+        <section class="zn_section eluid56f5b13c     section-sidemargins    section--no " id="eluid56f5b13c">
+            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
+                <div class="row ">
+                    <div class="eluidd34d5130      col-md-12 col-sm-12   znColumnElement" id="eluidd34d5130">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
+                            <div class="znColumnElement-innerContent"> <div class="kl-title-block clearfix tbk--text- tbk--center text-center tbk-symbol--  tbk-icon-pos--after-title eluidcbd4a072 "><h2 class="tbk__title" itemprop="headline">Отзывы</h2><h3 class="tbk__subtitle" itemprop="alternativeHeadline">Что о нас говорят</h3></div>
+                                <div class="testimonials-partners eluide4c61ad9  testimonials-partners--dark element-scheme--dark">
+                                    <div class="ts-pt-testimonials clearfix">
+                                        <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-2 ts-pt-testimonials__item--normal" style="margin-top:20px; ">
+                                            <div class="ts-pt-testimonials__text"> Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно.</div>
+                                            <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
+                                                <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/agency/wp-content/uploads/sites/25/2015/08/t2.jpg" width="128" height="128" alt="" title="t2.jpg">
+                                                <h4 class="ts-pt-testimonials__name" itemprop="headline">Михаил Тищенко</h4>
+                                                <div class="ts-pt-testimonials__position">Генеральный директор</div>
+                                                <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--5">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-1 ts-pt-testimonials__item--normal" style=" ">
+                                            <div class="ts-pt-testimonials__text">“Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. </div>
+                                            <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
+                                                <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/agency/wp-content/uploads/sites/25/2015/08/t1.jpg" width="128" height="128" alt="" title="t1.jpg">
+                                                <h4 class="ts-pt-testimonials__name" itemprop="headline">Андрей Макаренко</h4>
+                                                <div class="ts-pt-testimonials__position">Apple Inc.</div>
+                                                <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--4">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ts-pt-testimonials__item ts-pt-testimonials__item--size-1 ts-pt-testimonials__item--reversed" style=" ">
+                                            <div class="ts-pt-testimonials__infos ts-pt-testimonials__infos--">
+                                                <img class="ts-pt-testimonials__img cover-fit-img" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/agency/wp-content/uploads/sites/25/2015/08/t3.jpg" width="128" height="128" alt="" title="t3.jpg">
+                                                <h4 class="ts-pt-testimonials__name" itemprop="headline">Максим Гончаренко</h4>
+                                                <div class="ts-pt-testimonials__position">CFO, Facebook Inc.</div>
+                                                <div class="ts-pt-testimonials__stars ts-pt-testimonials__stars--5">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="ts-pt-testimonials__text"> Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д.  </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-partners__separator clearfix"></div>
+                                    <div class="ts-pt-partners ts-pt-partners--y-title clearfix">
+                                        <div class="ts-pt-partners__title">С нами уже</div>
+                                        <div class="ts-pt-partners__carousel-wrapper">
+                                            <div class="ts-pt-partners__carousel non-slick" data-slick="{&quot;infinite&quot;:true,&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:3000,&quot;slidesToShow&quot;:5,&quot;slidesToScroll&quot;:1,&quot;waitForAnimate&quot;:false,&quot;speed&quot;:0,&quot;swipe&quot;:false,&quot;arrows&quot;:false,&quot;respondTo&quot;:&quot;slider&quot;,&quot;responsive&quot;:[{&quot;breakpoint&quot;:1024,&quot;settings&quot;:{&quot;slidesToShow&quot;:4,&quot;slidesToScroll&quot;:4}},{&quot;breakpoint&quot;:767,&quot;settings&quot;:{&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:3}},{&quot;breakpoint&quot;:520,&quot;settings&quot;:{&quot;slidesToShow&quot;:2,&quot;slidesToScroll&quot;:2}},{&quot;breakpoint&quot;:380,&quot;settings&quot;:{&quot;slidesToShow&quot;:1,&quot;slidesToScroll&quot;:1}}]}">
+                                                <div class="ts-pt-partners__carousel-item">
+                                                    <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url">
+                                                        <img class="ts-pt-partners__img img-responsive" src="http://image.glavred.info/images/608xX/Oct2015/341212.png" alt="" title="client_01">
+                                                    </a>
+                                                </div>
+                                                <div class="ts-pt-partners__carousel-item">
+                                                    <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url">
+                                                        <img class="ts-pt-partners__img img-responsive" src="http://www.dicsconsulting.com.ua/images/logo_nsk.png" alt="" title="client_02">
+                                                    </a>
+                                                </div>
+                                                <div class="ts-pt-partners__carousel-item">
+                                                    <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url">
+                                                        <img class="ts-pt-partners__img img-responsive" src="http://toplogos.ru/images/logo-dinamo-kiev.png" alt="" title="client_03">
+                                                    </a>
+                                                </div>
+                                                <div class="ts-pt-partners__carousel-item">
+                                                    <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url">
+                                                        <img class="ts-pt-partners__img img-responsive" src="http://bez.in.ua/data/img/all/bez_DonbassArena_logo.png" alt="" title="client_04">
+                                                    </a>
+                                                </div>
+                                                <div class="ts-pt-partners__carousel-item">
+                                                    <a href="#" class="ts-pt-partners__link" target="_self" itemprop="url">
+                                                        <img class="ts-pt-partners__img img-responsive" src="https://imagecdn1.luxnet.ua/football24/resources/photos/football/teams/201006/6.png" alt="" title="client_05">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--<section class="zn_section eluid830190ea     section-sidemargins    section&#45;&#45;no " id="eluid830190ea">
+            <div class="zn_section_size container zn-section-height&#45;&#45;auto zn-section-content_algn&#45;&#45;middle ">
+                <div class="row ">
+                    <div class="eluid4564f3a3      col-md-12 col-sm-12   znColumnElement" id="eluid4564f3a3">
+                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper&#45;&#45;valign-top znColumnElement-innerWrapper&#45;&#45;halign-left ">
+                            <div class="znColumnElement-innerContent">
+                                <div class="zn_text_box eluidccecce91 zn_text_box-light element-scheme&#45;&#45;light">
                                     <h6 style="text-align: center;">
                                         <span style="font-size: 48px;">
                                             <span style="line-height: 18px;">
@@ -420,7 +1106,7 @@
                                 <div class="znBpl eluiddda8f93c ">
                                     <div class="znBpl-mainRow fxb">
                                         <div class="fxb-col">
-                                            <div class="znBpl-bPost znBpl-bPost--big ">
+                                            <div class="znBpl-bPost znBpl-bPost&#45;&#45;big ">
                                                 <div class="znBpl-bPost-imgWrapper"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-01-800x800.jpg" width="800" height="800" alt="" title="bpost-01.jpg" class=" znBpl-bPost-img cover-fit-img"/><ul class="post-categories">
                                                     <li><a href="http://demo.kallyas.net/membership/category/wordpress/" rel="category tag">WordPress</a></li></ul></div>
                                                 <div class="znBpl-bPost-header">
@@ -434,7 +1120,7 @@
                                         <div class="fxb-col">
                                             <div class="row znBpl-bPost-smallRow">
                                                 <div class="col-sm-6">
-                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                    <div class="znBpl-bPost znBpl-bPost&#45;&#45;small">
                                                         <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/a-branding-tool-for-everything-and-everyone/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-02-480x280.jpg" width="480" height="280" alt="" title="bpost-02.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
                                                             <li><a href="http://demo.kallyas.net/membership/category/graphic-design/" rel="category tag">Graphic Design</a></li></ul></div>
                                                         <div class="znBpl-bPost-header">
@@ -446,7 +1132,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                    <div class="znBpl-bPost znBpl-bPost&#45;&#45;small">
                                                         <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-sed/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-03-480x280.jpg" width="480" height="280" alt="" title="bpost-03.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
                                                             <li><a href="http://demo.kallyas.net/membership/category/creative/" rel="category tag">Creative</a></li>
                                                             <li><a href="http://demo.kallyas.net/membership/category/seo/" rel="category tag">Seo</a></li></ul></div>
@@ -460,7 +1146,7 @@
                                                 </div>
                                                 <div class="clearfix"></div>
                                                 <div class="col-sm-6">
-                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                    <div class="znBpl-bPost znBpl-bPost&#45;&#45;small">
                                                         <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/case-study-10-lessons-from-a-successful-startup/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-04-480x280.jpg" width="480" height="280" alt="" title="bpost-04.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
                                                             <li><a href="http://demo.kallyas.net/membership/category/apps/" rel="category tag">Apps</a></li></ul></div>
                                                         <div class="znBpl-bPost-header">
@@ -472,7 +1158,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="znBpl-bPost znBpl-bPost--small">
+                                                    <div class="znBpl-bPost znBpl-bPost&#45;&#45;small">
                                                         <div class="znBpl-bPost-imgWrapper"><a href="http://demo.kallyas.net/membership/2017/02/21/what-youre-missing-with-seo-that-will-make-a-world-of-difference/" class="znBpl-bPost-img"><img src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/bpost-05-480x280.jpg" width="480" height="280" alt="" title="bpost-05.jpg" class=" znBpl-bPost-img"/></a><ul class="post-categories">
                                                             <li><a href="http://demo.kallyas.net/membership/category/seo/" rel="category tag">Seo</a></li></ul></div>
                                                         <div class="znBpl-bPost-header">
@@ -490,7 +1176,7 @@
                                 </div>
                                 <div class="th-spacer clearfix eluid5f52a9fe  "></div>
                                 <div class="zn_buttons_element eluid50f37192 text-center ">
-                                    <a ui-sref="blog" href="/blog" id="eluid50f371920" class="eluid50f371920 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon--before btn--round" target="_self" itemprop="url">
+                                    <a ui-sref="blog" href="/blog" id="eluid50f371920" class="eluid50f371920 btn-element btn-element-0 btn  btn-fullwhite btn-lg  zn_dummy_value btn-icon&#45;&#45;before btn&#45;&#45;round" target="_self" itemprop="url">
                                         <span>Читать еще</span>
                                     </a>
                                 </div>
@@ -499,158 +1185,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="zn_section eluidec5db0d8     section-sidemargins    section--no " id="eluidec5db0d8">
-            <div class="zn_section_size container zn-section-height--auto zn-section-content_algn--top ">
-                <div class="row ">
-                    <div class="eluid078a978b      col-md-4 col-sm-4   znColumnElement" id="eluid078a978b">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid0e031a93  zn_text_box-light element-scheme--light"><h6 style="text-align: left;"><span style="line-height: 18px;"><span style="font-family: Ubuntu; font-weight: 300;"><span style="font-size: 30px;"><span style="color: #000000;">We've got you covered.</span></span></span></span></h6>
-                            </div> <div class="zn_separator clearfix eluidc4263108 zn_separator--icon-no "></div>
-                                <div class="zn_text_box eluid6f341c2c  zn_text_box-light element-scheme--light"><p style="text-align: left;"><span style="font-size:16px;"><span style="color: #000000;"><span style="font-family: Ubuntu;">Intuitive drag and drop Page Builder. Stunning themes. Over 100 Elements. Creating your beautiful website has never been easier.</span></span></span></p>
-                                </div> </div>
-                        </div>
-                    </div>
-                    <div class="eluidb3343552      col-md-8 col-sm-8   znColumnElement" id="eluidb3343552">
-                        <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent">
-                                <div class="zn_custom_container eluidcd420427  smart-cnt--default   clearfix">
-                                    <div class="row zn_col_container-smart_container ">
-                                        <div class="eluida7b3b0c9      col-md-6 col-sm-6   znColumnElement" id="eluida7b3b0c9">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid884a0cfc   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon1.png" alt="" title="icon1.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Stunning Page Builder</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">Setup pages and content like a PRO. Coding is not required and a handy documentation is included.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluidfc297dc5      col-md-6 col-sm-6   znColumnElement" id="eluidfc297dc5">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid95027c26   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon2.png" alt="" title="icon2.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Iconic Awarded Design</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">This design is featured across the
-                                                                    marketplaces and awarded for it's looks. Walkthrough and enjoy the visuals.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluid2cf98f44      col-md-12 col-sm-12   znColumnElement" id="eluid2cf98f44">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="th-spacer clearfix eluid01478233     "></div> </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluid754fac51      col-md-6 col-sm-6   znColumnElement" id="eluid754fac51">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluidedcc9345   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon3.png" width="55" height="55" alt="" title="icon3.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Featurewise Complete</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">Without a doubt, Kallyas is one of the most complete WordPress themes on the market, being packed with all the goodies and sweet gems.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluidcf62eeb8      col-md-6 col-sm-6   znColumnElement" id="eluidcf62eeb8">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid457261de   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon4.png" width="47" height="53" alt="" title="icon4.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Mature Project</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluid58390336      col-md-12 col-sm-12   znColumnElement" id="eluid58390336">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="th-spacer clearfix eluidecb4ad4f     "></div> </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluideacbbed7      col-md-6 col-sm-6   znColumnElement" id="eluideacbbed7">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid38dc5273   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon5.png" width="55" height="47" alt="" title="icon5.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">Rescue support</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="eluid1672c569      col-md-6 col-sm-6   znColumnElement" id="eluid1672c569">
-                                            <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                                                <div class="znColumnElement-innerContent"> <div class="kl-iconbox eluid3da57ebe   kl-iconbox--type-img  kl-iconbox--fleft kl-iconbox--align-left text-left kl-iconbox--theme-light element-scheme--light">
-                                                    <div class="kl-iconbox__inner clearfix">
-                                                        <div class="kl-iconbox__icon-wrapper ">
-                                                            <img class="kl-iconbox__icon" src="http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/uploads/sites/45/2017/02/icon6.png" alt="" title="icon6.png"> </div>
-                                                        <div class="kl-iconbox__content-wrapper">
-                                                            <div class="kl-iconbox__el-wrapper kl-iconbox__title-wrapper">
-                                                                <h3 class="kl-iconbox__title element-scheme__hdg1" itemprop="headline">e-Commerce Ready</h3>
-                                                            </div>
-                                                            <div class=" kl-iconbox__el-wrapper kl-iconbox__desc-wrapper">
-                                                                <p class="kl-iconbox__desc">In time, gathering awesome feedback from our loyal customers, Kallyas became a mature, stable and future-proof project.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+        </section>-->
 
     </div>
     <div class="znpb-footer-smart-area">
@@ -659,43 +1194,50 @@
                 <div class="row ">
                     <div class="eluid53597d7e      col-md-6 col-sm-6   znColumnElement" id="eluidae20d071">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid5387a540  zn_text_box-light element-scheme--light"><p><span style="font-size:18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">HOGASH STUDIOS</span></span></p>
-                            </div><div class="zn_text_box eluid46cf6434  zn_text_box-light element-scheme--light"><p><span style="color: #666666;">We're a full-service digital agency that believes being a Favorite brand is more valuable than just being a Famous one. We craft beautifully useful, connected ecosystems that grow businesses and build enduring relationships between brands and humans.</span></p>
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid5387a540  zn_text_box-light element-scheme--light">
+                                <p><span style="font-size:18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">SPORT4NATION</span></span></p>
+                            </div><div class="zn_text_box eluid46cf6434  zn_text_box-light element-scheme--light" style="font-size: 14px !important;"><p><span style="color: #666666;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </span></p>
                             </div> </div>
                         </div>
                     </div>
                     <div class="eluid61a78ba9      col-md-2 col-sm-2   znColumnElement" id="eluid61a78ba9">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid44e9db22  zn_text_box-light element-scheme--light"><p><span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">COMPANY</span></span></p>
-                            </div><div class="elm-custommenu clearfix eluid5a1ecfc6  text-left elm-custommenu--normal"><ul id="eluid5a1ecfc6" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="#"><span>Our Blog</span></a></li>
-                                <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="#"><span>Instagram</span></a></li>
-                                <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="#"><span>Snapchat</span></a></li>
-                                <li id="menu-item-74" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="#"><span>Facebook</span></a></li>
-                                <li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="#"><span>Twitter</span></a></li>
-                                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="#"><span>Dribbble</span></a></li>
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid44e9db22  zn_text_box-light element-scheme--light">
+                                <p>
+                                    <span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">О КОМПАНИИ</span></span></p>
+                            </div><div class="elm-custommenu clearfix eluid5a1ecfc6  text-left elm-custommenu--normal"><ul id="eluid5a1ecfc6" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-74" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-75" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="#"><span>Lorem</span></a></li>
                             </ul></div> </div>
                         </div>
                     </div>
                     <div class="eluidaff11a7a      col-md-2 col-sm-2   znColumnElement" id="eluidaff11a7a">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidf703b47e  zn_text_box-light element-scheme--light"><p><font color="#ffffff" face="Ubuntu"><span style="font-size: 18px;">MEMBER</span></font></p>
-                            </div><div class="elm-custommenu clearfix eluid9b0d93f8  text-left elm-custommenu--normal"><ul id="eluid9b0d93f8" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a href="#"><span>Home</span></a></li>
-                                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a href="#"><span>About</span></a></li>
-                                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="#"><span>Pricing</span></a></li>
-                                <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="#"><span>Blog</span></a></li>
-                                <li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="#"><span>Services</span></a></li>
-                                <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82"><a href="#"><span>Shop</span></a></li>
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluidf703b47e  zn_text_box-light element-scheme--light">
+                                <p><font color="#ffffff" face="Ubuntu"><span style="font-size: 18px;">УЧАСНИКИ</span></font></p>
+                            </div><div class="elm-custommenu clearfix eluid9b0d93f8  text-left elm-custommenu--normal">
+                                <ul id="eluid9b0d93f8" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll">
+                                    <li id="menu-item-77" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-79" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82"><a href="#"><span>Lorem</span></a></li>
                             </ul></div> </div>
                         </div>
                     </div>
                     <div class="eluid47f629f7      col-md-2 col-sm-2   znColumnElement" id="eluid47f629f7">
                         <div class="znColumnElement-innerWrapper znColumnElement-innerWrapper--valign-top znColumnElement-innerWrapper--halign-left ">
-                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid772158f4  zn_text_box-light element-scheme--light"><p><span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">FOLLOW</span></span></p>
-                            </div><div class="elm-custommenu clearfix eluid831a7f02  text-left elm-custommenu--normal"><ul id="eluid831a7f02" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="#"><span>Account</span></a></li>
-                                <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="#"><span>Billing</span></a></li>
-                                <li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="#"><span>Membership</span></a></li>
-                                <li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#"><span>Receipt</span></a></li>
-                                <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="#"><span>Invoice</span></a></li>
+                            <div class="znColumnElement-innerContent"> <div class="zn_text_box eluid772158f4  zn_text_box-light element-scheme--light">
+                                <p><span style="font-size: 18px;"><span style="font-family: Ubuntu; font-weight: 100; color: #ffffff;">СЛЕДИТЕ ЗА НАМИ</span></span></p>
+                            </div><div class="elm-custommenu clearfix eluid831a7f02  text-left elm-custommenu--normal"><ul id="eluid831a7f02" class="elm-cmlist clearfix elm-cmlist--skin-dark element-scheme--dark zn_dummy_value elm-cmlist--normal nav-with-smooth-scroll"><li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-84"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-86" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86"><a href="#"><span>Lorem</span></a></li>
+                                <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="#"><span>Lorem</span></a></li>
                             </ul></div> </div>
                         </div>
                     </div>
@@ -750,38 +1292,18 @@
 
 
 
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var wc_add_to_cart_params = {"ajax_url":"\/membership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/membership\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View Cart","cart_url":"http:\/\/demo.kallyas.net\/membership\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.6.14'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var woocommerce_params = {"ajax_url":"\/membership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/membership\/?wc-ajax=%%endpoint%%"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.6.14'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var wc_cart_fragments_params = {"ajax_url":"\/membership\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/membership\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.6.14'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/themes/kallyas/js/plugins.min.js?ver=4.11.0'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/themes/kallyas/addons/scrollmagic/scrollmagic-tweenlite.js?ver=4.11.0'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var zn_do_login = {"ajaxurl":"\/membership\/wp-admin\/admin-ajax.php","add_to_cart_text":"Item Added to cart!"};
-    var ZnThemeAjax = {"ajaxurl":"\/membership\/wp-admin\/admin-ajax.php","zn_back_text":"Back","zn_color_theme":"light","res_menu_trigger":"992","top_offset_tolerance":"20","logout_url":"http:\/\/demo.kallyas.net\/membership\/wp-login.php?action=logout&redirect_to=http%3A%2F%2Fdemo.kallyas.net%2Fmembership&_wpnonce=8202b3f499"};
-    var ZnWooCommerce = {"thumbs_behavior":"click"};
-    /* ]]> */
-</script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/themes/kallyas/js/znscript.min.js?ver=4.11.0'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/themes/kallyas/addons/slick/slick.min.js?ver=4.11.0'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/znpb-counter-element/elements/counter/js/jquery.countTo.min.js?ver=4.11.0'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-content/plugins/znpb-counter-element/elements/counter/js/app.js?ver=4.11.0'></script>
-<script type='text/javascript' src='http://126mvb18f4jp3r7fft1nzp6j.wpengine.netdna-cdn.com/membership/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
-<script> jQuery(function($){ $(".widget_meta a[href='http://demo.kallyas.net/membership/comments/feed/']").parent().remove(); }); </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
