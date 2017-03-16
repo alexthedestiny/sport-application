@@ -4,7 +4,7 @@
 angular.
   module('googleMap').
   component('googleMap', {
-    templateUrl: 'components/index-page/google-map/google-map.template.html',
+    template: require('./google-map.template.html'),
     controller: ['$scope', 'Movie', '$filter',
       function MovieListController($scope, Movie, $filter) {
 

@@ -4,7 +4,7 @@
 angular.
   module('header').
   component('headerComponent', {
-    templateUrl: 'components/header/header.template.html',
+    template: require('./header.template.html'),
     controller: ['$scope', 'Movie',
       function HeaderController($scope, Movie) {
 

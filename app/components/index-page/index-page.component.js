@@ -4,7 +4,7 @@
 angular.
   module('indexPage').
   component('indexPage', {
-    templateUrl: 'components/index-page/index-page.template.html',
+    templateUrl: './index-page.template.html',
     controller: ['$scope', 'Movie', '$filter',
       function MovieListController($scope, Movie, $filter) {
 

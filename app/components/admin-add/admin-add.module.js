@@ -7,3 +7,5 @@ angular.module('adminAdd', [
     'uiGmapgoogle-maps',
     'footer'
 ]);
+
+require('./admin-add.component');

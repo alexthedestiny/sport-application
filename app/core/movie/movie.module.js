@@ -2,3 +2,4 @@
 
 // Define the `core.phone` module
 angular.module('core.movie', ['ngResource']);
+require('./movie.service');

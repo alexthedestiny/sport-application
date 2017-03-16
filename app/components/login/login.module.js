@@ -7,3 +7,4 @@ angular.module('login', [
     'uiGmapgoogle-maps',
     'footer'
 ]);
+require('./login.component');

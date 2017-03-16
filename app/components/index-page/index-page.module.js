@@ -1,5 +1,6 @@
 'use strict';
 
+
 // Define the `indexPage` module
 angular.module('indexPage', [
     'core.movie',
@@ -8,3 +9,9 @@ angular.module('indexPage', [
     'footer',
     'googleMap'
 ]);
+
+require('./index-page.component');
+require('./index-page.template.html');
+
+require('./google-map/google-map.module');
+

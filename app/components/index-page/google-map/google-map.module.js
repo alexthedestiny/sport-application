@@ -37,3 +37,5 @@ angular.module('googleMap', [
             return output;
         }
     }]);
+
+require('./google-map.component');

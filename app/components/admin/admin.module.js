@@ -1,5 +1,6 @@
 'use strict';
 
+
 // Define the `indexPage` module
 angular.module('admin', [
     'core.movie',
@@ -7,3 +8,4 @@ angular.module('admin', [
     'uiGmapgoogle-maps',
     'footer'
 ]);
+require('./admin.component');
